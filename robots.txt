@@ -1,0 +1,35 @@
+# robots.txt — GrupoCESA
+# Permitir el rastreo de todo el sitio y de los bots de IA
+
+User-agent: *
+Allow: /
+
+# Bots de buscadores e IA (explícitos, por claridad)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+Sitemap: https://www.grupocesa.net/sitemap.xml
