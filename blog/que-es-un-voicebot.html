@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es-AR" data-variant="aurora">
+<html lang="es-AR">
+<script>!function () { var t = localStorage.getItem("gcesa-theme") || "signal"; document.documentElement.setAttribute("data-variant", t) }();</script>
 
 <head>
   <meta charset="UTF-8">
@@ -40,7 +41,7 @@
       "@type": "FAQPage",
       "mainEntity": [
         { "@type": "Question", "name": "¿Qué es un voicebot?", "acceptedAnswer": { "@type": "Answer", "text": "Un voicebot es un agente de voz con inteligencia artificial que atiende llamadas telefónicas y conversa con voz natural, entendiendo lo que dice la persona y respondiendo o resolviendo gestiones de forma automática, 24 horas al día." } },
-        { "@type": "Question", "name": "¿Cómo funciona un voicebot con IA generativa?", "acceptedAnswer": { "@type": "Answer", "text": "El voicebot transcribe la voz a texto (speech-to-text), un modelo de IA generativa (como GPT) interpreta la intención y genera la respuesta consultando los sistemas de la empresa, y luego convierte esa respuesta nuevamente en voz natural (text-to-speech). Todo ocurre en segundos durante la llamada." } },
+        { "@type": "Question", "name": "¿Cómo funciona un voicebot con IA generativa?", "acceptedAnswer": { "@type": "Answer", "text": "El voicebot transcribe la voz a texto (speech-to-text), un modelo de IA generativa interpreta la intención y genera la respuesta consultando los sistemas de la empresa, y luego convierte esa respuesta nuevamente en voz natural (text-to-speech). Todo ocurre en segundos durante la llamada." } },
         { "@type": "Question", "name": "¿Para qué sirve un voicebot en una empresa?", "acceptedAnswer": { "@type": "Answer", "text": "Sirve para atender llamadas sin esperas, agendar y reprogramar turnos, consultar saldos, gestionar reclamos, hacer cobranzas y derivar a un agente humano cuando es necesario, reduciendo costos y mejorando la experiencia del cliente." } }
       ]
     }
@@ -81,6 +82,12 @@
         </svg>
         Volver al blog
       </a>
+      <button id="theme-toggle" class="btn btn-ghost"
+        style="padding: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-left: auto;"
+        aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+          stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg></button>
     </div>
   </header>
 
@@ -122,7 +129,7 @@
           <ol>
             <li><strong>Reconocimiento de voz (speech-to-text):</strong> el voicebot convierte lo que dice la persona en
               texto, en tiempo real.</li>
-            <li><strong>Comprensión con IA generativa (GPT):</strong> un modelo de lenguaje interpreta la intención,
+            <li><strong>Comprensión con IA generativa:</strong> un modelo de lenguaje interpreta la intención,
               recuerda el contexto de la conversación y decide qué hacer.</li>
             <li><strong>Acción sobre tus sistemas:</strong> consulta tu CRM, ERP, agenda o base de datos para traer
               información real (un turno disponible, un saldo, el estado de un envío) y ejecuta la gestión.</li>
@@ -351,6 +358,29 @@
       });
     })();
 
+  </script>
+
+  <!-- theme-toggle script -->
+  <script>
+    (function () {
+      const btn = document.getElementById('theme-toggle');
+      if (btn) {
+        const moonIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        const sunIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+
+        // Set initial icon
+        const currentVariant = document.documentElement.getAttribute('data-variant');
+        btn.innerHTML = currentVariant === 'aurora' ? sunIcon : moonIcon;
+
+        btn.addEventListener('click', () => {
+          const isDark = document.documentElement.getAttribute('data-variant') === 'aurora';
+          const newTheme = isDark ? 'signal' : 'aurora';
+          document.documentElement.setAttribute('data-variant', newTheme);
+          localStorage.setItem('gcesa-theme', newTheme);
+          btn.innerHTML = isDark ? moonIcon : sunIcon;
+        });
+      }
+    })();
   </script>
 </body>
 

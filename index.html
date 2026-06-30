@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="es-AR" data-variant="aurora">
+<html lang="es-AR" data-variant="signal">
+<script>!function () { var t = localStorage.getItem("gcesa-theme") || "signal"; document.documentElement.setAttribute("data-variant", t) }();</script>
 
 <head>
   <meta charset="UTF-8">
@@ -8,9 +9,9 @@
   <!-- ===== SEO principal ===== -->
   <title>Voicebot y Agentes de IA en Argentina | GrupoCESA · Aris</title>
   <meta name="description"
-    content="Voicebot con IA generativa, agentes de IA y omnicanalidad para empresas en Argentina. GrupoCESA, partner oficial Yeastar: telefonía IP, contact center y chatbots con GPT que atienden 24/7.">
+    content="Voicebot con IA generativa, agentes de IA y omnicanalidad para empresas en Argentina. GrupoCESA, partner oficial Yeastar: telefonía IP, contact center y chatbots que atienden 24/7.">
   <meta name="keywords"
-    content="voicebot, agentes de IA, IA generativa, GPT, omnicanalidad, chatbots, telefonía IP, contact center, Yeastar, comunicaciones unificadas, Argentina">
+    content="voicebot, agentes de IA, IA generativa, omnicanalidad, chatbots, telefonía IP, contact center, Yeastar, comunicaciones unificadas, Argentina">
   <meta name="author" content="GrupoCESA">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <meta name="geo.region" content="AR">
@@ -56,7 +57,7 @@
       "description": "Empresa argentina de comunicaciones unificadas e inteligencia artificial conversacional: voicebot, agentes de IA, omnicanalidad, telefonía IP y contact center. Operamos en Argentina, Chile y LATAM.",
       "slogan": "Comunicaciones unificadas, conversaciones inteligentes",
       "areaServed": ["AR", "CL", "Iberoamérica"],
-      "knowsAbout": ["Voicebot", "Agentes de IA", "IA generativa", "Omnicanalidad", "Telefonía IP", "Contact Center", "Chatbots con GPT"],
+      "knowsAbout": ["Voicebot", "Agentes de IA", "IA generativa", "Omnicanalidad", "Telefonía IP", "Contact Center", "Chatbots"],
       "award": ["Partner oficial Yeastar", "Partner TotalChat", "Partner Hibot"],
       "address": {
         "@type": "PostalAddress",
@@ -83,7 +84,7 @@
       "serviceType": "Voicebot y agentes de IA conversacional",
       "provider": { "@id": "https://www.grupocesa.net/#organization" },
       "areaServed": "AR",
-      "description": "Voicebot impulsado por IA generativa (GPT) que atiende llamadas con voz natural, resuelve gestiones completas y se integra con tu CRM, ERP y telefonía. Adaptable a retail, salud, fintech, seguros, telco y cobranzas.",
+      "description": "Voicebot impulsado por IA generativa que atiende llamadas con voz natural, resuelve gestiones completas y se integra con tu CRM, ERP y telefonía. Adaptable a retail, salud, fintech, seguros, telco y cobranzas.",
       "audience": { "@type": "BusinessAudience", "audienceType": "Empresas" }
     },
     {
@@ -94,7 +95,7 @@
           "name": "¿Qué es un voicebot y cómo funciona el de GrupoCESA?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Un voicebot es un agente de voz con inteligencia artificial que atiende llamadas telefónicas y conversa con voz natural. Aris, el voicebot de GrupoCESA, usa IA generativa (GPT) para entender la intención del cliente, resolver gestiones completas —turnos, saldos, reclamos, cobranzas— y derivar a un agente humano cuando hace falta, las 24 horas."
+            "text": "Un voicebot es un agente de voz con inteligencia artificial que atiende llamadas telefónicas y conversa con voz natural. Aris, el voicebot de GrupoCESA, usa IA generativa para entender la intención del cliente, resolver gestiones completas —turnos, saldos, reclamos, cobranzas— y derivar a un agente humano cuando hace falta, las 24 horas."
           }
         },
         {
@@ -168,19 +169,25 @@
         </svg>
         <span><b>Grupo</b>CESA</span>
       </a>
-      <nav class="nav-links" aria-label="Principal">
-        <a href="#soluciones">Soluciones</a>
-        <a href="voicebot-aris.html">Voicebot ARIS</a>
-        <a href="#verticales">Verticales</a>
-        <a href="#alianzas">Alianzas</a>
-        <a href="#nosotros">Nosotros</a>
-        <a href="#faq">FAQ</a>
-        <a href="blog/index.html">Blog</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <div class="nav-cta">
-        <a href="#contacto" class="btn btn-ghost">Hablar con ventas</a>
-        <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
+      <div class="nav-right" style="display: flex; align-items: center; gap: 32px;">
+        <nav class="nav-links" aria-label="Principal">
+          <a href="#soluciones">Soluciones</a>
+          <a href="voicebot-aris.html">Voicebot ARIS</a>
+          <a href="#verticales">Verticales</a>
+          <a href="#alianzas">Alianzas</a>
+          <a href="#nosotros">Nosotros</a>
+          <a href="#faq">FAQ</a>
+          <a href="blog/index.html">Blog</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="#contacto" class="btn btn-primary">Solicitar demo</a>
+          <button id="theme-toggle" class="btn btn-ghost"
+            style="padding: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-left: 8px;"
+            aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg></button>
+        </div>
       </div>
     </div>
   </header>
@@ -194,8 +201,9 @@
           <span class="hero-badge"><span class="dot"></span> IA generativa &middot; Voicebot &middot; Agentes de
             IA</span>
           <h1>Voicebot y agentes de <span class="grad">IA</span> para empresas en Argentina.</h1>
-          <p class="lead">Conectamos cada canal de tu empresa —voz, WhatsApp, web y redes— con <strong>IA generativa
-              (GPT)</strong> que entiende, resuelve y deriva. Conocé a <strong>Aris</strong>, el voicebot que atiende
+          <p class="lead">Conectamos cada canal de tu empresa —voz, WhatsApp, web y redes— con <strong>IA
+              generativa</strong> que entiende, resuelve y deriva. Conocé a <strong>Aris</strong>, el voicebot que
+            atiende
             24/7 y se adapta a tu industria. Comunicaciones unificadas, conversaciones inteligentes.</p>
           <div class="hero-actions">
             <a href="#contacto" class="btn btn-primary btn-lg">Solicitar una demo
@@ -288,7 +296,7 @@
                 <path d="M8 10h.01M12 10h.01M16 10h.01M9 18l-2 3" stroke-linecap="round" />
               </svg></div>
             <h3>Agentes de IA &amp; Chatbots</h3>
-            <p>Automatizá consultas, gestiones y ventas con <strong>agentes de IA generativa (GPT)</strong> que
+            <p>Automatizá consultas, gestiones y ventas con <strong>agentes de IA generativa</strong> que
               entienden lenguaje natural, aprenden de tus datos y escalan a un humano cuando hace falta.</p>
             <span class="tag">Automatización 24/7 →</span>
           </article>
@@ -506,8 +514,52 @@
           <p>Salud, banca, gobierno, seguros e industria ya operan sus comunicaciones con GrupoCESA.</p>
         </div>
         <div class="clientes-panel reveal">
-          <img src="assets/clientes.png"
-            alt="Logos de clientes de GrupoCESA: Swiss Medical, Banco Nación, Supervielle, BNP Paribas Cardif, Peabody, Howard Johnson, Ministerio de Defensa, Unión Industrial Argentina, Defensoría del Pueblo, ineba, HIGA Gandulfo, Poen y más">
+          <div class="logos-grid">
+            <div class="logo-cell"><img src="assets/logos/obsba-logo.png" alt="ObSBA" loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/Instituto-Henry-Moore-logo.jpg" alt="Instituto Henry Moore"
+                loading="lazy" class="henry-moore-logo"></div>
+            <div class="logo-cell"><img src="assets/logos/grupo-marquez-logo.png" alt="Grupo Márquez" loading="lazy">
+            </div>
+            <div class="logo-cell"><img src="assets/logos/imat-logo.svg" alt="IMAT" loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/bna-logo.png" alt="Banco Nación" loading="lazy"
+                class="logo-lg"></div>
+            <div class="logo-cell"><img src="assets/logos/mas_vida_logo.png" alt="+Vida" loading="lazy"
+                class="mas_vida_logo"></div>
+            <div class="logo-cell"><img src="assets/logos/ineba-logo.jpg" alt="Ineba" loading="lazy" class="ineba-logo">
+            </div>
+            <div class="logo-cell"><img src="assets/logos/toribio-achaval-logo.png" alt="Toribio Achával"
+                loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/UIA-LOGO.png" alt="UIA" loading="lazy" class="UIA-LOGO"></div>
+            <div class="logo-cell"><img src="assets/logos/poen-logo.png" alt="Poen" loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/bremen-logo.png" alt="Bremen" loading="lazy" class="logo-lg">
+            </div>
+            <div class="logo-cell"><img src="assets/logos/favaloro-logo.png" alt="Fundación Favaloro" loading="lazy"
+                class="favaloro-logo">
+            </div>
+            <div class="logo-cell"><img src="assets/logos/sheraton-pilar-logo.png" alt="Sheraton Pilar" loading="lazy"
+                class="sheraton-logo">
+            </div>
+            <div class="logo-cell"><img src="assets/logos/ICBA-logo.png" alt="ICBA" loading="lazy" class="icba-logo">
+            </div>
+            <div class="logo-cell"><img src="assets/logos/junta-seguridad-en-el-transporte-logo.png"
+                alt="Junta de Seguridad en el Transporte" loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/obra-social-ospjn-logo.png" alt="Obra Social Poder Judicial"
+                loading="lazy" class="logo-ospjn"></div>
+            <div class="logo-cell"><img src="assets/logos/Defensoria-provincia-buenos-aires-logo.jpg"
+                alt="Defensoría Prov. Buenos Aires" loading="lazy" class="defensoria-logo"></div>
+            <div class="logo-cell"><img src="assets/logos/ReinosCeramicos-logo.png" alt="Reinos Cerámicos"
+                loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/cdu-logo.png" alt="CDU" loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/autopistas-del-sol-logo.png" alt="Autopistas del Sol"
+                loading="lazy" class="logo-autopistas"></div>
+            <div class="logo-cell"><img src="assets/logos/autopistas-del-oeste-logo.png" alt="Autopistas del Oeste"
+                loading="lazy" class="logo-autopistas"></div>
+            <div class="logo-cell"><img src="assets/logos/rodenstock-logo.svg" alt="Rodenstock" loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/Pan_American_Energy_logo.svg.png" alt="Pan American Energy"
+                loading="lazy"></div>
+            <div class="logo-cell"><img src="assets/logos/Dexter-logo.png" alt="Dexter" loading="lazy" class="logo-lg">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -595,7 +647,7 @@
             <div class="faq-a">
               <p>Un <strong>voicebot</strong> es un agente de voz con inteligencia artificial que atiende llamadas
                 telefónicas y conversa con voz natural. <strong>Aris</strong>, el voicebot de GrupoCESA, usa <strong>IA
-                  generativa (GPT)</strong> para entender la intención del cliente, resolver gestiones completas
+                  generativa</strong> para entender la intención del cliente, resolver gestiones completas
                 —turnos, saldos, reclamos, cobranzas— y derivar a un agente humano cuando hace falta, las 24 horas.</p>
             </div>
           </details>
@@ -656,24 +708,25 @@
             <div class="contact-list">
               <div class="ci">
                 <div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
-                    <path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
-                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round"
+                      stroke-linejoin="round" />
+                    <circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></div>
-                <div><small>Argentina</small><b>+54 11 5263-0000</b></div>
+                <div><small>Dirección</small><b>República Árabe Siria 3239, Of. 901<br>Palermo - C1425, CABA</b></div>
               </div>
               <div class="ci">
                 <div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
                     <path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
                       stroke-linecap="round" stroke-linejoin="round" />
                   </svg></div>
-                <div><small>Chile</small><b>+56 2 2582-0000</b></div>
+                <div><small>Teléfono</small><b>(011) 6841-6550</b></div>
               </div>
               <div class="ci">
                 <div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
                     <rect x="3" y="5" width="18" height="14" rx="2" />
                     <path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round" />
                   </svg></div>
-                <div><small>Email</small><b>comercial@grupocesa.net</b></div>
+                <div><small>Email</small><b>contacto@grupocesa.net</b></div>
               </div>
             </div>
           </div>
@@ -709,7 +762,7 @@
               Aris</button>
             <p class="form-ok" id="formOk">✓ ¡Gracias! Te contactamos en menos de 24 h hábiles.</p>
             <p class="form-err" id="formErr">No pudimos enviar tu mensaje. Escribinos a <a
-                href="mailto:comercial@grupocesa.net">comercial@grupocesa.net</a>.</p>
+                href="mailto:contacto@grupocesa.net">contacto@grupocesa.net</a>.</p>
           </form>
         </div>
       </div>
@@ -806,6 +859,9 @@
     integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
     crossorigin="anonymous"></script>
 
+  <!-- Variables de entorno locales -->
+  <script src="env.js"></script>
+
   <!-- ===== page logic (inline para máxima fiabilidad) ===== -->
   <script>
     (function () {
@@ -814,10 +870,31 @@
       function onScroll() { if (window.scrollY > 12) header.classList.add('scrolled'); else header.classList.remove('scrolled'); }
       window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 
-      var logos = ['Swiss Medical', 'Banco Nación', 'Supervielle', 'BNP Paribas Cardif', 'Peabody', 'Howard Johnson', 'Ministerio de Defensa', 'Unión Industrial Argentina', 'Defensoría del Pueblo', 'ineba', 'HIGA Gandulfo', 'Poen', 'ObSBA', '+Vida', 'Bremen'];
-      var ic = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 0 1 0 18M3 12h18" stroke-linecap="round"/></svg>';
+      var logos = [
+        'obsba-logo.png', 'grupo-marquez-logo.png',
+        'imat-logo.svg', 'bna-logo.png', 'mas_vida_logo.png', 'ineba-logo.jpg',
+        'toribio-achaval-logo.png', 'UIA-LOGO.png', 'poen-logo.png', 'bremen-logo.png',
+        'favaloro-logo.png', 'sheraton-pilar-logo.png', 'ICBA-logo.png',
+        'junta-seguridad-en-el-transporte-logo.png', 'ReinosCeramicos-logo.png',
+        'cdu-logo.png', 'autopistas-del-sol-logo.png', 'autopistas-del-oeste-logo.png'
+        , 'Pan_American_Energy_logo.svg.png', 'Dexter-logo.png'
+      ];
       var track = document.getElementById('logoTrack');
-      if (track) { var html = ''; for (var d = 0; d < 2; d++) { for (var i = 0; i < logos.length; i++) { html += '<div class="logo-item">' + ic + logos[i] + '</div>'; } } track.innerHTML = html; }
+      if (track) {
+        var html = '';
+        for (var d = 0; d < 2; d++) {
+          for (var i = 0; i < logos.length; i++) {
+            var isXl = ['sheraton-pilar-logo.png', 'ICBA-logo.png'].includes(logos[i]);
+            var isLg = ['favaloro-logo.png'].includes(logos[i]);
+            var isOspjn = logos[i] === 'obra-social-ospjn-logo.png' || logos[i] === 'bna-logo.png' || logos[i] === 'bremen-logo.png' || logos[i] === 'Dexter-logo.png' || logos[i] === 'autopistas-del-oeste-logo.png' || logos[i] === "autopistas-del-sol-logo.png" || logos[i] === "mas_vida_logo.png" || logos[i] === "UIA-LOGO.png";
+            var h = isXl ? '120px' : (isLg ? '64px' : '44px');
+            var mw = isXl ? '230px' : (isLg ? '150px' : '120px');
+            var t = isOspjn ? 'transform: scale(2.2);' : '';
+            html += '<div class="logo-item"><img src="assets/logos/' + logos[i] + '" alt="" loading="lazy" style="height:' + h + ';width:auto;max-width:' + mw + ';object-fit:contain;' + t + '"></div>';
+          }
+        }
+        track.innerHTML = html;
+      }
 
       var wave = document.getElementById('wave');
       if (wave) { var bars = ''; for (var w = 0; w < 40; w++) { var h = 14 + Math.round(Math.abs(Math.sin(w * 0.7)) * 46); bars += '<i style="height:' + h + 'px;animation-delay:' + (w * 0.05).toFixed(2) + 's"></i>'; } wave.innerHTML = bars; }
@@ -850,6 +927,17 @@
         grid.innerHTML = g;
       }
 
+      // Configuración de botón flotante WhatsApp desde variable de entorno
+      var waBtn = document.querySelector('.wa-float');
+      if (waBtn && window.ENV) {
+        var waNum = window.ENV.WHATSAPP_NUMBER;
+        var waMsg = window.ENV.WHATSAPP_MESSAGE || "";
+        if (waNum) {
+          waBtn.href = "https://wa.me/" + waNum + "?text=" + encodeURIComponent(waMsg);
+          waBtn.target = '_blank';
+        }
+      }
+
       var form = document.getElementById('leadForm');
       if (form) {
         form.addEventListener('submit', function (e) {
@@ -871,7 +959,7 @@
             window.dataLayer.push({ event: 'lead_form_submit', form: 'contacto_home' });
           }
 
-          var action = form.getAttribute('action') || '';
+          var action = (window.ENV && window.ENV.WEBHOOK_URL) || form.getAttribute('action') || '';
           // Si todavía no configuraron el endpoint, simulamos éxito (modo demo)
           if (!action || action.indexOf('TU_ID') !== -1) {
             trackLead();
@@ -879,8 +967,24 @@
             setTimeout(function () { form.reset(); btn.disabled = false; btn.textContent = 'Solicitar demo de Aris'; }, 2500);
             return;
           }
-          // Envío real (Formspree / endpoint propio)
-          fetch(action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+
+          // Preparamos los datos como JSON
+          var formData = new FormData(form);
+          var object = {};
+          formData.forEach(function (value, key) {
+            object[key] = value;
+          });
+          var jsonBody = JSON.stringify(object);
+
+          // Envío real como JSON
+          fetch(action, {
+            method: 'POST',
+            body: jsonBody,
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json'
+            }
+          })
             .then(function (r) {
               if (!r.ok) throw new Error('bad status');
               trackLead();
@@ -899,7 +1003,7 @@
   <script type="text/babel" src="tweaks-panel.jsx"></script>
   <script type="text/babel">
     const ARIS_TWEAKS = /*EDITMODE-BEGIN*/{
-      "variant": "aurora",
+      "variant": localStorage.getItem('gcesa-theme') || "signal",
       "accent": ["#10B85F", "#6CF2AC"],
       "headingFont": "Sora",
       "glow": true
@@ -908,7 +1012,7 @@
     function TweaksApp() {
       const [t, setTweak] = useTweaks(ARIS_TWEAKS);
       const root = document.documentElement;
-      React.useEffect(() => { root.setAttribute('data-variant', t.variant); }, [t.variant]);
+      React.useEffect(() => { root.setAttribute('data-variant', t.variant); localStorage.setItem('gcesa-theme', t.variant); }, [t.variant]);
       React.useEffect(() => {
         const [base, bright] = Array.isArray(t.accent) ? t.accent : [t.accent, t.accent];
         root.style.setProperty('--accent', base);
@@ -1039,6 +1143,25 @@
       });
     })();
 
+  </script>
+  <!-- theme-toggle script -->
+  <script>
+    (function () {
+      const btn = document.getElementById('theme-toggle');
+      if (btn) {
+        const moonIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+        const sunIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+        const currentVariant = document.documentElement.getAttribute('data-variant');
+        btn.innerHTML = currentVariant === 'aurora' ? sunIcon : moonIcon;
+        btn.addEventListener('click', () => {
+          const isDark = document.documentElement.getAttribute('data-variant') === 'aurora';
+          const newTheme = isDark ? 'signal' : 'aurora';
+          document.documentElement.setAttribute('data-variant', newTheme);
+          localStorage.setItem('gcesa-theme', newTheme);
+          btn.innerHTML = isDark ? moonIcon : sunIcon;
+        });
+      }
+    })();
   </script>
 </body>
 
