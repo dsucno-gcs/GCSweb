@@ -3,6 +3,21 @@
 <script>!function(){var t=localStorage.getItem("gcesa-theme")||"signal";document.documentElement.setAttribute("data-variant",t)}();</script>
 
 <head>
+  <!-- Archivo de Variables de Entorno -->
+  <script src="../env-config.js"></script>
+
+<!-- Google Tag Manager -->
+<script>
+if (window.ENV && window.ENV.GTM_ID) {
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', window.ENV.GTM_ID);
+}
+</script>
+<!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog de IA conversacional y voicebots | GrupoCESA</title>
@@ -46,29 +61,39 @@
 </head>
 
 <body>
+
+
+
   <div class="bg-field" aria-hidden="true">
     <div class="blob b1"></div>
     <div class="blob b3"></div>
   </div>
   <div class="bg-grid" aria-hidden="true"></div>
 
-  <header class="sub-header">
+  <header class="site-header" id="header">
     <div class="wrap nav">
       <a class="brand" href="../index.html" aria-label="GrupoCESA inicio">
         <svg class="logo-ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
           <path class="solid" d="M20 4 A16 16 0 0 0 20 36" stroke-width="4.6" stroke-linecap="round" />
-          <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round"
-            stroke-dasharray="0.1 9" />
+          <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round" stroke-dasharray="0.1 9" />
         </svg>
         <span><b>Grupo</b>CESA</span>
       </a>
-      <a class="back-link" href="../index.html">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-          <path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        Volver al inicio
-      </a>
-      <button id="theme-toggle" class="btn btn-ghost" style="padding: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-left: auto;" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+      <div class="nav-right" style="display: flex; align-items: center; gap: 32px;">
+        <nav class="nav-links" aria-label="Principal">
+          <a href="../index.html#soluciones">Soluciones</a>
+          <a href="../voicebot-aris.html">Voicebot ARIS</a>
+          <a href="../index.html#verticales">Verticales</a>
+          <a href="../index.html#alianzas">Alianzas</a>
+          <a href="../index.html#nosotros">Nosotros</a>
+          <a href="../index.html#faq">FAQ</a>
+          <a href="index.html">Blog</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="../index.html#contacto" class="btn btn-primary">Solicitar demo</a>
+          <button id="theme-toggle" class="btn btn-ghost" style="padding: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-left: 8px;" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -348,6 +373,19 @@
       }
     })();
   </script>
+
+<!-- HiBot Chat Widget -->
+<script>
+if (window.ENV && window.ENV.CHAT_CHANNEL_ID) {
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = "https://livechat.hibot.us/hibot-chat.min.js";
+  s.setAttribute('data-channel', window.ENV.CHAT_CHANNEL_ID);
+  s.id = "livechat";
+  document.body.appendChild(s);
+}
+</script>
+
 </body>
 
 </html>

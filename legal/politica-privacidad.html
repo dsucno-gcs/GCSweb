@@ -3,6 +3,21 @@
 <script>!function(){var t=localStorage.getItem("gcesa-theme")||"signal";document.documentElement.setAttribute("data-variant",t)}();</script>
 
 <head>
+  <!-- Archivo de Variables de Entorno -->
+  <script src="../env-config.js"></script>
+
+<!-- Google Tag Manager -->
+<script>
+if (window.ENV && window.ENV.GTM_ID) {
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', window.ENV.GTM_ID);
+}
+</script>
+<!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad | GrupoCESA</title>
@@ -32,6 +47,9 @@
 </head>
 
 <body>
+
+
+
   <div class="bg-grid" aria-hidden="true"></div>
 
   <header class="sub-header">
@@ -283,6 +301,19 @@
       }
     })();
   </script>
+
+<!-- HiBot Chat Widget -->
+<script>
+if (window.ENV && window.ENV.CHAT_CHANNEL_ID) {
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = "https://livechat.hibot.us/hibot-chat.min.js";
+  s.setAttribute('data-channel', window.ENV.CHAT_CHANNEL_ID);
+  s.id = "livechat";
+  document.body.appendChild(s);
+}
+</script>
+
 </body>
 
 </html>

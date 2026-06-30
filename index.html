@@ -3,6 +3,21 @@
 <script>!function () { var t = localStorage.getItem("gcesa-theme") || "signal"; document.documentElement.setAttribute("data-variant", t) }();</script>
 
 <head>
+  <!-- Archivo de Variables de Entorno -->
+  <script src="env-config.js"></script>
+
+<!-- Google Tag Manager -->
+<script>
+if (window.ENV && window.ENV.GTM_ID) {
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer', window.ENV.GTM_ID);
+}
+</script>
+<!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -140,6 +155,9 @@
 </head>
 
 <body>
+
+
+
 
   <template id="__bundler_thumbnail">
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -525,7 +543,7 @@
                 class="logo-lg"></div>
             <div class="logo-cell"><img src="assets/logos/mas_vida_logo.png" alt="+Vida" loading="lazy"
                 class="mas_vida_logo"></div>
-            <div class="logo-cell"><img src="assets/logos/ineba-logo.jpg" alt="Ineba" loading="lazy" class="ineba-logo">
+            <div class="logo-cell"><img src="assets/logos/ineba-logo.png" alt="Ineba" loading="lazy" class="ineba-logo">
             </div>
             <div class="logo-cell"><img src="assets/logos/toribio-achaval-logo.png" alt="Toribio Achával"
                 loading="lazy"></div>
@@ -545,7 +563,7 @@
                 alt="Junta de Seguridad en el Transporte" loading="lazy"></div>
             <div class="logo-cell"><img src="assets/logos/obra-social-ospjn-logo.png" alt="Obra Social Poder Judicial"
                 loading="lazy" class="logo-ospjn"></div>
-            <div class="logo-cell"><img src="assets/logos/Defensoria-provincia-buenos-aires-logo.jpg"
+            <div class="logo-cell"><img src="assets/logos/Defensoria-provincia-buenos-aires-logo.png"
                 alt="Defensoría Prov. Buenos Aires" loading="lazy" class="defensoria-logo"></div>
             <div class="logo-cell"><img src="assets/logos/ReinosCeramicos-logo.png" alt="Reinos Cerámicos"
                 loading="lazy"></div>
@@ -839,13 +857,6 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="#contacto" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24">
-      <path
-        d="M.05 24l1.7-6.2A11.9 11.9 0 0 1 12 0a11.9 11.9 0 0 1 8.4 20.3A11.9 11.9 0 0 1 6.2 22.3L.05 24zm6.6-3.8l.4.2a9.9 9.9 0 0 0 5 1.4 9.9 9.9 0 1 0-9.9-9.9c0 1.8.5 3.5 1.4 5l.2.4-1 3.7 3.9-1zm11.4-5.5c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2c-.2-.3 0-.4.1-.6l.4-.5c.2-.2.2-.3.3-.5a.6.6 0 0 0 0-.5L9.5 8c-.2-.4-.3-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.6.7 2.3.8 3 .6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" />
-    </svg>
-  </a>
-
   <!-- Tweaks panel mount -->
   <div id="tweaks-root"></div>
 
@@ -872,7 +883,7 @@
 
       var logos = [
         'obsba-logo.png', 'grupo-marquez-logo.png',
-        'imat-logo.svg', 'bna-logo.png', 'mas_vida_logo.png', 'ineba-logo.jpg',
+        'imat-logo.svg', 'bna-logo.png', 'mas_vida_logo.png', 'ineba-logo.png',
         'toribio-achaval-logo.png', 'UIA-LOGO.png', 'poen-logo.png', 'bremen-logo.png',
         'favaloro-logo.png', 'sheraton-pilar-logo.png', 'ICBA-logo.png',
         'junta-seguridad-en-el-transporte-logo.png', 'ReinosCeramicos-logo.png',
@@ -886,7 +897,7 @@
           for (var i = 0; i < logos.length; i++) {
             var isXl = ['sheraton-pilar-logo.png', 'ICBA-logo.png'].includes(logos[i]);
             var isLg = ['favaloro-logo.png'].includes(logos[i]);
-            var isOspjn = logos[i] === 'obra-social-ospjn-logo.png' || logos[i] === 'bna-logo.png' || logos[i] === 'bremen-logo.png' || logos[i] === 'Dexter-logo.png' || logos[i] === 'autopistas-del-oeste-logo.png' || logos[i] === "autopistas-del-sol-logo.png" || logos[i] === "mas_vida_logo.png" || logos[i] === "UIA-LOGO.png";
+            var isOspjn = logos[i] === 'obra-social-ospjn-logo.png' || logos[i] === 'bna-logo.png' || logos[i] === 'bremen-logo.png' || logos[i] === 'Dexter-logo.png' || logos[i] === 'autopistas-del-oeste-logo.png' || logos[i] === "autopistas-del-sol-logo.png" || logos[i] === "mas_vida_logo.png" || logos[i] === "UIA-LOGO.png" || logos[i] === "ineba-logo.png";
             var h = isXl ? '120px' : (isLg ? '64px' : '44px');
             var mw = isXl ? '230px' : (isLg ? '150px' : '120px');
             var t = isOspjn ? 'transform: scale(2.2);' : '';
@@ -925,17 +936,6 @@
             '</ul><div class="kpi"><b>' + v.kpi[0] + '</b> ' + v.kpi[1] + '</div></article>';
         });
         grid.innerHTML = g;
-      }
-
-      // Configuración de botón flotante WhatsApp desde variable de entorno
-      var waBtn = document.querySelector('.wa-float');
-      if (waBtn && window.ENV) {
-        var waNum = window.ENV.WHATSAPP_NUMBER;
-        var waMsg = window.ENV.WHATSAPP_MESSAGE || "";
-        if (waNum) {
-          waBtn.href = "https://wa.me/" + waNum + "?text=" + encodeURIComponent(waMsg);
-          waBtn.target = '_blank';
-        }
       }
 
       var form = document.getElementById('leadForm');
@@ -1163,6 +1163,19 @@
       }
     })();
   </script>
+
+<!-- HiBot Chat Widget -->
+<script>
+if (window.ENV && window.ENV.CHAT_CHANNEL_ID) {
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = "https://livechat.hibot.us/hibot-chat.min.js";
+  s.setAttribute('data-channel', window.ENV.CHAT_CHANNEL_ID);
+  s.id = "livechat";
+  document.body.appendChild(s);
+}
+</script>
+
 </body>
 
 </html>
