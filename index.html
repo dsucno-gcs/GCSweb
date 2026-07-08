@@ -3,6 +3,24 @@
 <script>!function () { var t = localStorage.getItem("gcesa-theme") || "signal"; document.documentElement.setAttribute("data-variant", t) }();</script>
 
 <head>
+  <!-- Archivo de Variables de Entorno -->
+  <script src="env-config.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    if (window.ENV && window.ENV.GTM_ID) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', window.ENV.GTM_ID);
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,7 +40,8 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_AR">
   <meta property="og:site_name" content="GrupoCESA">
-  <meta property="og:title" content="GrupoCESA · Telefonía IP, Omnicanalidad y VoiceBot con IA para empresas en Argentina">
+  <meta property="og:title"
+    content="GrupoCESA · Telefonía IP, Omnicanalidad y VoiceBot con IA para empresas en Argentina">
   <meta property="og:description"
     content="GrupoCESA: comunicaciones unificadas para empresas en Argentina y LATAM. Telefonía IP Yeastar, omnicanalidad, chatbots, contact center y VoiceBot con IA. Soporte local.">
   <meta property="og:url" content="https://www.grupocesa.net/">
@@ -32,7 +51,8 @@
 
   <!-- ===== Twitter ===== -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GrupoCESA · Telefonía IP, Omnicanalidad y VoiceBot con IA para empresas en Argentina">
+  <meta name="twitter:title"
+    content="GrupoCESA · Telefonía IP, Omnicanalidad y VoiceBot con IA para empresas en Argentina">
   <meta name="twitter:description"
     content="GrupoCESA: comunicaciones unificadas para empresas en Argentina y LATAM. Telefonía IP Yeastar, omnicanalidad, chatbots, contact center y VoiceBot con IA. Soporte local.">
   <meta name="twitter:image" content="https://www.grupocesa.net/og-cover.jpg">
@@ -173,6 +193,9 @@
 
 <body>
 
+
+
+
   <template id="__bundler_thumbnail">
     <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
       <rect width="100" height="100" fill="#070D0A" />
@@ -204,7 +227,11 @@
       <div class="nav-right" style="display: flex; align-items: center; gap: 32px;">
         <nav class="nav-links" aria-label="Principal">
           <div class="nav-dropdown">
-            <a href="#soluciones" class="nav-dropbtn">Soluciones <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-left: 2px;"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <a href="#soluciones" class="nav-dropbtn">Soluciones <svg viewBox="0 0 24 24" width="16" height="16"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="vertical-align: middle; margin-left: 2px;">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg></a>
             <div class="nav-dropdown-content">
               <a href="omnicanalidad.html">Omnicanalidad y Chatbots IA</a>
               <a href="telefonia-ip.html">Telefonía IP</a>
@@ -238,7 +265,8 @@
           <span class="hero-badge"><span class="dot"></span> IA generativa &middot; Voicebot &middot; Agentes de
             IA</span>
           <h1>Comunicaciones unificadas para empresas que quieren atender mejor y operar más eficientemente</h1>
-          <p class="lead">Telefonía IP, omnicanalidad, chatbots, contact center y VoiceBot con IA — implementados y soportados por un equipo especializado en <strong>Argentina</strong> y <strong>LATAM</strong>.</p>
+          <p class="lead">Telefonía IP, omnicanalidad, chatbots, contact center y VoiceBot con IA — implementados y
+            soportados por un equipo especializado en <strong>Argentina</strong> y <strong>LATAM</strong>.</p>
           <div class="hero-actions">
             <a href="#contacto" class="btn btn-primary btn-lg">Solicitá una demo gratuita
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
@@ -276,8 +304,10 @@
             <div class="uc-core">
               <div class="uc-core-glow"></div>
               <svg viewBox="0 0 40 40" fill="none" width="28" height="28">
-                <path class="solid" d="M20 4 A16 16 0 0 0 20 36" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"/>
-                <path d="M20 4 A16 16 0 0 1 20 36" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 8" opacity=".6"/>
+                <path class="solid" d="M20 4 A16 16 0 0 0 20 36" stroke="var(--accent)" stroke-width="4"
+                  stroke-linecap="round" />
+                <path d="M20 4 A16 16 0 0 1 20 36" stroke="var(--accent)" stroke-width="4" stroke-linecap="round"
+                  stroke-dasharray="0.1 8" opacity=".6" />
               </svg>
               <span class="uc-core-label">GrupoCESA</span>
             </div>
@@ -286,72 +316,92 @@
             <svg class="uc-canvas" viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <filter id="glow-line">
-                  <feGaussianBlur stdDeviation="2" result="blur"/>
-                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  <feGaussianBlur stdDeviation="2" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
                 </filter>
                 <filter id="glow-dot">
-                  <feGaussianBlur stdDeviation="3" result="blur"/>
-                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  <feGaussianBlur stdDeviation="3" result="blur" />
+                  <feMerge>
+                    <feMergeNode in="blur" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
                 </filter>
               </defs>
 
               <!-- Lines: center(220,220) to nodes: top(220,60), right(380,220), bottom(220,380), left(60,220) -->
-              <line class="uc-beam" x1="220" y1="220" x2="220" y2="85" filter="url(#glow-line)"/>
-              <line class="uc-beam" x1="220" y1="220" x2="355" y2="220" filter="url(#glow-line)"/>
-              <line class="uc-beam" x1="220" y1="220" x2="220" y2="355" filter="url(#glow-line)"/>
-              <line class="uc-beam" x1="220" y1="220" x2="85" y2="220" filter="url(#glow-line)"/>
+              <line class="uc-beam" x1="220" y1="220" x2="220" y2="85" filter="url(#glow-line)" />
+              <line class="uc-beam" x1="220" y1="220" x2="355" y2="220" filter="url(#glow-line)" />
+              <line class="uc-beam" x1="220" y1="220" x2="220" y2="355" filter="url(#glow-line)" />
+              <line class="uc-beam" x1="220" y1="220" x2="85" y2="220" filter="url(#glow-line)" />
 
               <!-- Traveling particles — one per line, staggered -->
-              <circle class="uc-pkt pkt-top"    r="4" fill="var(--accent)" filter="url(#glow-dot)">
+              <circle class="uc-pkt pkt-top" r="4" fill="var(--accent)" filter="url(#glow-dot)">
                 <animateMotion dur="2.2s" repeatCount="indefinite" begin="0s">
-                  <mpath href="#path-top"/>
+                  <mpath href="#path-top" />
                 </animateMotion>
               </circle>
-              <circle class="uc-pkt pkt-right"  r="4" fill="var(--accent)" filter="url(#glow-dot)">
+              <circle class="uc-pkt pkt-right" r="4" fill="var(--accent)" filter="url(#glow-dot)">
                 <animateMotion dur="2.2s" repeatCount="indefinite" begin="-0.55s">
-                  <mpath href="#path-right"/>
+                  <mpath href="#path-right" />
                 </animateMotion>
               </circle>
               <circle class="uc-pkt pkt-bottom" r="4" fill="var(--accent)" filter="url(#glow-dot)">
                 <animateMotion dur="2.2s" repeatCount="indefinite" begin="-1.1s">
-                  <mpath href="#path-bottom"/>
+                  <mpath href="#path-bottom" />
                 </animateMotion>
               </circle>
-              <circle class="uc-pkt pkt-left"   r="4" fill="var(--accent)" filter="url(#glow-dot)">
+              <circle class="uc-pkt pkt-left" r="4" fill="var(--accent)" filter="url(#glow-dot)">
                 <animateMotion dur="2.2s" repeatCount="indefinite" begin="-1.65s">
-                  <mpath href="#path-left"/>
+                  <mpath href="#path-left" />
                 </animateMotion>
               </circle>
 
               <!-- Hidden motion paths -->
-              <path id="path-top"    d="M220,220 L220,85"   fill="none"/>
-              <path id="path-right"  d="M220,220 L355,220"  fill="none"/>
-              <path id="path-bottom" d="M220,220 L220,355"  fill="none"/>
-              <path id="path-left"   d="M220,220 L85,220"   fill="none"/>
+              <path id="path-top" d="M220,220 L220,85" fill="none" />
+              <path id="path-right" d="M220,220 L355,220" fill="none" />
+              <path id="path-bottom" d="M220,220 L220,355" fill="none" />
+              <path id="path-left" d="M220,220 L85,220" fill="none" />
             </svg>
 
             <!-- Four solution nodes -->
             <a href="telefonia-ip.html" class="uc-sol-node uc-top">
               <div class="uc-sol-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                  <path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
               </div>
               <span>Telefonía IP</span>
             </a>
             <a href="omnicanalidad.html" class="uc-sol-node uc-right">
               <div class="uc-sol-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke-linecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke-linecap="round" />
+                </svg>
               </div>
               <span>Omnicanalidad</span>
             </a>
             <a href="contact-center.html" class="uc-sol-node uc-bottom">
               <div class="uc-sol-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" stroke-linecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path
+                    d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"
+                    stroke-linecap="round" />
+                </svg>
               </div>
               <span>Contact Center</span>
             </a>
             <a href="voicebot-aris.html" class="uc-sol-node uc-left">
               <div class="uc-sol-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" stroke-linecap="round"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8" stroke-linecap="round"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22">
+                  <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" stroke-linecap="round" />
+                  <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v3M8 22h8" stroke-linecap="round" />
+                </svg>
               </div>
               <span>VoiceBot IA</span>
             </a>
@@ -389,7 +439,8 @@
         <div class="sec-head">
           <span class="eyebrow">Plataforma</span>
           <h2>Nuestras soluciones</h2>
-          <p>Una empresa, cuatro soluciones para todas tus comunicaciones. Desde la infraestructura de voz hasta la atención automatizada con IA.</p>
+          <p>Una empresa, cuatro soluciones para todas tus comunicaciones. Desde la infraestructura de voz hasta la
+            atención automatizada con IA.</p>
         </div>
         <div class="sol-grid">
           <a href="omnicanalidad.html" class="card reveal" style="display:block; text-decoration:none;">
@@ -634,7 +685,7 @@
                 class="logo-lg"></div>
             <div class="logo-cell"><img src="assets/logos/mas_vida_logo.png" alt="+Vida" loading="lazy"
                 class="mas_vida_logo"></div>
-            <div class="logo-cell"><img src="assets/logos/ineba-logo.jpg" alt="Ineba" loading="lazy" class="ineba-logo">
+            <div class="logo-cell"><img src="assets/logos/ineba-logo.png" alt="Ineba" loading="lazy" class="ineba-logo">
             </div>
             <div class="logo-cell"><img src="assets/logos/toribio-achaval-logo.png" alt="Toribio Achával"
                 loading="lazy"></div>
@@ -654,7 +705,7 @@
                 alt="Junta de Seguridad en el Transporte" loading="lazy"></div>
             <div class="logo-cell"><img src="assets/logos/obra-social-ospjn-logo.png" alt="Obra Social Poder Judicial"
                 loading="lazy" class="logo-ospjn"></div>
-            <div class="logo-cell"><img src="assets/logos/Defensoria-provincia-buenos-aires-logo.jpg"
+            <div class="logo-cell"><img src="assets/logos/Defensoria-provincia-buenos-aires-logo.png"
                 alt="Defensoría Prov. Buenos Aires" loading="lazy" class="defensoria-logo"></div>
             <div class="logo-cell"><img src="assets/logos/ReinosCeramicos-logo.png" alt="Reinos Cerámicos"
                 loading="lazy"></div>
@@ -679,7 +730,8 @@
         <div class="sec-head">
           <span class="eyebrow">Casos de éxito</span>
           <h2>Resultados comprobables.</h2>
-          <p>Implementaciones reales de comunicaciones unificadas e IA conversacional en empresas de Argentina y LATAM, con resultados medibles.
+          <p>Implementaciones reales de comunicaciones unificadas e IA conversacional en empresas de Argentina y LATAM,
+            con resultados medibles.
             (Datos anonimizados a pedido del cliente.)</p>
         </div>
         <div class="case-grid">
@@ -710,10 +762,12 @@
             </div>
             <h3>Unificación de canales y aumento de ventas</h3>
             <div class="cs-block"><b>Problema</b>
-              <p>Pérdida de consultas y ventas por gestionar WhatsApp, Instagram y web en plataformas separadas sin trazabilidad.</p>
+              <p>Pérdida de consultas y ventas por gestionar WhatsApp, Instagram y web en plataformas separadas sin
+                trazabilidad.</p>
             </div>
             <div class="cs-block"><b>Solución</b>
-              <p>Plataforma de <strong>Omnicanalidad</strong> centralizada con enrutamiento automático a vendedores según disponibilidad.</p>
+              <p>Plataforma de <strong>Omnicanalidad</strong> centralizada con enrutamiento automático a vendedores
+                según disponibilidad.</p>
             </div>
             <div class="cs-metrics">
               <div><b><em>+45</em>%</b><span>Velocidad de respuesta</span></div>
@@ -728,10 +782,12 @@
             </div>
             <h3>Infraestructura robusta sin interrupciones</h3>
             <div class="cs-block"><b>Problema</b>
-              <p>Caídas frecuentes del sistema de telefonía tradicional que afectaban la comunicación crítica entre plantas operativas y oficinas.</p>
+              <p>Caídas frecuentes del sistema de telefonía tradicional que afectaban la comunicación crítica entre
+                plantas operativas y oficinas.</p>
             </div>
             <div class="cs-block"><b>Solución</b>
-              <p>Migración a <strong>Telefonía IP Yeastar</strong> en la nube con soporte local, unificando todas las sucursales.</p>
+              <p>Migración a <strong>Telefonía IP Yeastar</strong> en la nube con soporte local, unificando todas las
+                sucursales.</p>
             </div>
             <div class="cs-metrics">
               <div><b><em>99.9</em>%</b><span>Uptime garantizado</span></div>
@@ -746,10 +802,12 @@
             </div>
             <h3>Control total y métricas en tiempo real</h3>
             <div class="cs-block"><b>Problema</b>
-              <p>Falta de visibilidad sobre el rendimiento de los agentes y alto porcentaje de abandono de llamadas en picos de demanda.</p>
+              <p>Falta de visibilidad sobre el rendimiento de los agentes y alto porcentaje de abandono de llamadas en
+                picos de demanda.</p>
             </div>
             <div class="cs-block"><b>Solución</b>
-              <p>Implementación de <strong>Contact Center</strong> en la nube con grabación, supervisión en vivo y reportes avanzados.</p>
+              <p>Implementación de <strong>Contact Center</strong> en la nube con grabación, supervisión en vivo y
+                reportes avanzados.</p>
             </div>
             <div class="cs-metrics">
               <div><b><em>−25</em>%</b><span>Tasa de abandono</span></div>
@@ -770,39 +828,48 @@
         </div>
         <div class="faq-list">
           <details class="faq-item" open>
-            <summary><span>¿El VoiceBot de GrupoCESA entiende el español rioplatense?</span><i class="chev"></i></summary>
+            <summary><span>¿El VoiceBot de GrupoCESA entiende el español rioplatense?</span><i class="chev"></i>
+            </summary>
             <div class="faq-a">
-              <p>Sí. ARIS está entrenado con modelos de lenguaje adaptados al español rioplatense, incluyendo expresiones coloquiales y variaciones propias del mercado argentino.</p>
+              <p>Sí. ARIS está entrenado con modelos de lenguaje adaptados al español rioplatense, incluyendo
+                expresiones coloquiales y variaciones propias del mercado argentino.</p>
             </div>
           </details>
           <details class="faq-item">
             <summary><span>¿Cuánto tiempo lleva implementar el VoiceBot?</span><i class="chev"></i></summary>
             <div class="faq-a">
-              <p>El tiempo estándar de implementación es de 30 días hábiles para configuraciones básicas, y entre 45 y 60 días para proyectos con integraciones complejas (CRM, ERP, sistemas de turnos).</p>
+              <p>El tiempo estándar de implementación es de 30 días hábiles para configuraciones básicas, y entre 45 y
+                60 días para proyectos con integraciones complejas (CRM, ERP, sistemas de turnos).</p>
             </div>
           </details>
           <details class="faq-item">
-            <summary><span>¿Se puede integrar con el sistema telefónico que ya tiene mi empresa?</span><i class="chev"></i></summary>
+            <summary><span>¿Se puede integrar con el sistema telefónico que ya tiene mi empresa?</span><i
+                class="chev"></i></summary>
             <div class="faq-a">
-              <p>Sí. ARIS se integra con las principales plataformas de telefonía IP (Asterisk, FreePBX, 3CX, Cisco y otros) y con operadores SIP locales. No es necesario cambiar de proveedor.</p>
+              <p>Sí. ARIS se integra con las principales plataformas de telefonía IP (Asterisk, FreePBX, 3CX, Cisco y
+                otros) y con operadores SIP locales. No es necesario cambiar de proveedor.</p>
             </div>
           </details>
           <details class="faq-item">
-            <summary><span>¿Qué pasa cuando el VoiceBot no puede resolver la consulta?</span><i class="chev"></i></summary>
+            <summary><span>¿Qué pasa cuando el VoiceBot no puede resolver la consulta?</span><i class="chev"></i>
+            </summary>
             <div class="faq-a">
-              <p>ARIS detecta automáticamente cuándo escalar y transfiere la llamada a un agente humano con el contexto de la conversación previa, sin que el cliente tenga que repetir la información.</p>
+              <p>ARIS detecta automáticamente cuándo escalar y transfiere la llamada a un agente humano con el contexto
+                de la conversación previa, sin que el cliente tenga que repetir la información.</p>
             </div>
           </details>
           <details class="faq-item">
             <summary><span>¿Cuántas llamadas simultáneas puede manejar?</span><i class="chev"></i></summary>
             <div class="faq-a">
-              <p>La plataforma escala automáticamente según el volumen. No hay un límite fijo de concurrencia; la capacidad se ajusta a la demanda sin impacto en la calidad de la atención.</p>
+              <p>La plataforma escala automáticamente según el volumen. No hay un límite fijo de concurrencia; la
+                capacidad se ajusta a la demanda sin impacto en la calidad de la atención.</p>
             </div>
           </details>
           <details class="faq-item">
             <summary><span>¿GrupoCESA hace el soporte post-implementación?</span><i class="chev"></i></summary>
             <div class="faq-a">
-              <p>Sí. Todos nuestros clientes cuentan con soporte local en Argentina. No trabajamos con soporte offshore ni tercerizado.</p>
+              <p>Sí. Todos nuestros clientes cuentan con soporte local en Argentina. No trabajamos con soporte offshore
+                ni tercerizado.</p>
             </div>
           </details>
         </div>
@@ -816,7 +883,8 @@
           <div class="contact-info">
             <span class="eyebrow">Hablemos</span>
             <h2>Comunicaciones unificadas para tu empresa.</h2>
-            <p>Contanos el desafío de comunicación de tu organización y te armamos una propuesta a medida. Sin compromiso.</p>
+            <p>Contanos el desafío de comunicación de tu organización y te armamos una propuesta a medida. Sin
+              compromiso.</p>
             <div class="contact-list">
               <div class="ci">
                 <div class="cic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
@@ -870,7 +938,8 @@
             </div>
             <div class="field"><label for="msg">¿Qué querés resolver?</label><textarea id="msg" name="mensaje"
                 placeholder="Contanos tu caso..."></textarea></div>
-            <button type="submit" class="btn btn-primary btn-lg" style="justify-content:center">Solicitar propuesta gratuita</button>
+            <button type="submit" class="btn btn-primary btn-lg" style="justify-content:center">Solicitar propuesta
+              gratuita</button>
             <p class="form-ok" id="formOk">✓ ¡Gracias! Te contactamos en menos de 24 h hábiles.</p>
             <p class="form-err" id="formErr">No pudimos enviar tu mensaje. Escribinos a <a
                 href="mailto:contacto@grupocesa.net">contacto@grupocesa.net</a>.</p>
@@ -950,13 +1019,6 @@
     </div>
   </footer>
 
-  <a class="wa-float" href="#contacto" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24">
-      <path
-        d="M.05 24l1.7-6.2A11.9 11.9 0 0 1 12 0a11.9 11.9 0 0 1 8.4 20.3A11.9 11.9 0 0 1 6.2 22.3L.05 24zm6.6-3.8l.4.2a9.9 9.9 0 0 0 5 1.4 9.9 9.9 0 1 0-9.9-9.9c0 1.8.5 3.5 1.4 5l.2.4-1 3.7 3.9-1zm11.4-5.5c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.6.8-.8 1-.1.2-.3.2-.5.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2c-.2-.3 0-.4.1-.6l.4-.5c.2-.2.2-.3.3-.5a.6.6 0 0 0 0-.5L9.5 8c-.2-.4-.3-.4-.5-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.5 1.1 2.7c.1.2 1.9 2.9 4.6 4 1.6.7 2.3.8 3 .6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z" />
-    </svg>
-  </a>
-
   <!-- Tweaks panel mount -->
   <div id="tweaks-root"></div>
 
@@ -983,7 +1045,7 @@
 
       var logos = [
         'obsba-logo.png', 'grupo-marquez-logo.png',
-        'imat-logo.svg', 'bna-logo.png', 'mas_vida_logo.png', 'ineba-logo.jpg',
+        'imat-logo.svg', 'bna-logo.png', 'mas_vida_logo.png', 'ineba-logo.png',
         'toribio-achaval-logo.png', 'UIA-LOGO.png', 'poen-logo.png', 'bremen-logo.png',
         'favaloro-logo.png', 'sheraton-pilar-logo.png', 'ICBA-logo.png',
         'junta-seguridad-en-el-transporte-logo.png', 'ReinosCeramicos-logo.png',
@@ -997,7 +1059,7 @@
           for (var i = 0; i < logos.length; i++) {
             var isXl = ['sheraton-pilar-logo.png', 'ICBA-logo.png'].includes(logos[i]);
             var isLg = ['favaloro-logo.png'].includes(logos[i]);
-            var isOspjn = logos[i] === 'obra-social-ospjn-logo.png' || logos[i] === 'bna-logo.png' || logos[i] === 'bremen-logo.png' || logos[i] === 'Dexter-logo.png' || logos[i] === 'autopistas-del-oeste-logo.png' || logos[i] === "autopistas-del-sol-logo.png" || logos[i] === "mas_vida_logo.png" || logos[i] === "UIA-LOGO.png";
+            var isOspjn = logos[i] === 'obra-social-ospjn-logo.png' || logos[i] === 'bna-logo.png' || logos[i] === 'bremen-logo.png' || logos[i] === 'Dexter-logo.png' || logos[i] === 'autopistas-del-oeste-logo.png' || logos[i] === "autopistas-del-sol-logo.png" || logos[i] === "mas_vida_logo.png" || logos[i] === "UIA-LOGO.png" || logos[i] === "ineba-logo.png";
             var h = isXl ? '120px' : (isLg ? '64px' : '44px');
             var mw = isXl ? '230px' : (isLg ? '150px' : '120px');
             var t = isOspjn ? 'transform: scale(2.2);' : '';
@@ -1036,17 +1098,6 @@
             '</ul><div class="kpi"><b>' + v.kpi[0] + '</b> ' + v.kpi[1] + '</div></article>';
         });
         grid.innerHTML = g;
-      }
-
-      // Configuración de botón flotante WhatsApp desde variable de entorno
-      var waBtn = document.querySelector('.wa-float');
-      if (waBtn && window.ENV) {
-        var waNum = window.ENV.WHATSAPP_NUMBER;
-        var waMsg = window.ENV.WHATSAPP_MESSAGE || "";
-        if (waNum) {
-          waBtn.href = "https://wa.me/" + waNum + "?text=" + encodeURIComponent(waMsg);
-          waBtn.target = '_blank';
-        }
       }
 
       var form = document.getElementById('leadForm');
@@ -1274,6 +1325,19 @@
       }
     })();
   </script>
+
+  <!-- HiBot Chat Widget -->
+  <script>
+    if (window.ENV && window.ENV.CHAT_CHANNEL_ID) {
+      var s = document.createElement('script');
+      s.defer = true;
+      s.src = "https://livechat.hibot.us/hibot-chat.min.js";
+      s.setAttribute('data-channel', window.ENV.CHAT_CHANNEL_ID);
+      s.id = "livechat";
+      document.body.appendChild(s);
+    }
+  </script>
+
 </body>
 
 </html>

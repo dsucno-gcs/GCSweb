@@ -3,8 +3,28 @@
 <script>!function () { var t = localStorage.getItem("gcesa-theme") || "signal"; document.documentElement.setAttribute("data-variant", t) }();</script>
 
 <head>
+  <!-- Archivo de Variables de Entorno -->
+  <script src="../env-config.js"></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    if (window.ENV && window.ENV.GTM_ID) {
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || []; w[l].push({
+          'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+        }); var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', window.ENV.GTM_ID);
+    }
+  </script>
+  <!-- End Google Tag Manager -->
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="../assets/favicon-grupocesa.png?v=2">
+  <link rel="icon" type="image/png" href="../assets/favicon-grupocesa.png?v=2">
   <title>Voicebot vs. chatbot vs. agente de IA: ¿cuál necesita tu empresa? | GrupoCESA</title>
   <meta name="description"
     content="Diferencias entre voicebot, chatbot y agente de IA generativa. Tabla comparativa y guía para elegir la tecnología de atención al cliente según tu caso de uso.">
@@ -111,352 +131,384 @@
 </head>
 
 <body>
+
+
+
   <div class="bg-grid" aria-hidden="true"></div>
 
   <header class="site-header" id="header">
-    <div class="wrap nav">
-      <a class="brand" href="../index.html#top" aria-label="GrupoCESA inicio">
-        <svg class="logo-ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path class="solid" d="M20 4 A16 16 0 0 0 20 36" stroke-width="4.6" stroke-linecap="round" />
-          <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round" stroke-dasharray="0.1 9" />
-        </svg>
-        <span><b>Grupo</b>CESA</span>
-      </a>
-      <div class="nav-right" style="display:flex;align-items:center;gap:32px;">
-        <nav class="nav-links" aria-label="Principal">
-          <div class="nav-dropdown">
-            <a href="../index.html#soluciones">Soluciones <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:2px"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
-            <div class="nav-dropdown-content">
-              <a href="../omnicanalidad.html">Omnicanalidad y Chatbots IA</a>
-              <a href="../telefonia-ip.html">Telefonía IP</a>
-              <a href="../contact-center.html">Contact Center</a>
-              <a href="../voicebot-aris.html">VoiceBot ARIS</a>
+    <header class="site-header" id="header">
+      <div class="wrap nav">
+        <a class="brand" href="../index.html#top" aria-label="GrupoCESA inicio">
+          <svg class="logo-ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <path class="solid" d="M20 4 A16 16 0 0 0 20 36" stroke-width="4.6" stroke-linecap="round" />
+            <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round"
+              stroke-dasharray="0.1 9" />
+            <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round"
+              stroke-dasharray="0.1 9" />
+          </svg>
+          <span><b>Grupo</b>CESA</span>
+        </a>
+        <div class="nav-right" style="display:flex;align-items:center;gap:32px;">
+          <nav class="nav-links" aria-label="Principal">
+            <div class="nav-dropdown">
+              <a href="../index.html#soluciones">Soluciones <svg viewBox="0 0 24 24" width="14" height="14" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  style="vertical-align:middle;margin-left:2px">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg></a>
+              <div class="nav-dropdown-content">
+                <a href="../omnicanalidad.html">Omnicanalidad y Chatbots IA</a>
+                <a href="../telefonia-ip.html">Telefonía IP</a>
+                <a href="../contact-center.html">Contact Center</a>
+                <a href="../voicebot-aris.html">VoiceBot ARIS</a>
+              </div>
             </div>
+            <a href="../nosotros.html">Nosotros</a>
+            <a href="../index.html#casos">Casos de éxito</a>
+            <a href="index.html">Blog</a>
+          </nav>
+          <div class="nav-cta">
+            <a href="../index.html#contacto" class="btn btn-primary">Contactar a ventas</a>
+            <button id="theme-toggle" class="btn btn-ghost"
+              style="padding:10px;border-radius:50%;display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:8px"
+              aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg></button>
           </div>
-          <a href="../nosotros.html">Nosotros</a>
-          <a href="../index.html#casos">Casos de éxito</a>
-          <a href="index.html">Blog</a>
-        </nav>
-        <div class="nav-cta">
-          <a href="../index.html#contacto" class="btn btn-primary">Contactar a ventas</a>
-          <button id="theme-toggle" class="btn btn-ghost" style="padding:10px;border-radius:50%;display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:8px" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="page-head">
-      <div class="wrap" style="max-width:760px;margin:0 auto">
-        <div class="crumbs"><a href="../index.html">Inicio</a> / <a href="index.html">Blog</a> /
-          <span>Comparativa</span>
+    <main>
+      <section class="page-head">
+        <div class="wrap" style="max-width:760px;margin:0 auto">
+          <div class="crumbs"><a href="../index.html">Inicio</a> / <a href="index.html">Blog</a> /
+            <span>Comparativa</span>
+          </div>
+          <h1>Voicebot vs. chatbot vs. agente de IA: ¿cuál necesita tu empresa?</h1>
+          <div class="meta"><span class="tag">Comparativa</span><span>9 de junio de 2026</span><span>·</span><span>6 min
+              de lectura</span></div>
         </div>
-        <h1>Voicebot vs. chatbot vs. agente de IA: ¿cuál necesita tu empresa?</h1>
-        <div class="meta"><span class="tag">Comparativa</span><span>9 de junio de 2026</span><span>·</span><span>6 min
-            de lectura</span></div>
-      </div>
-    </section>
+      </section>
 
-    <article class="article">
-      <div class="wrap article-wrap">
-        <p class="article-lead">"Chatbot", "voicebot", "agente de IA": los términos se mezclan y confunden a la hora de
-          decidir. Acá los separamos con claridad para que elijas la tecnología correcta según cómo te contactan tus
-          clientes.</p>
+      <article class="article">
+        <div class="wrap article-wrap">
+          <p class="article-lead">"Chatbot", "voicebot", "agente de IA": los términos se mezclan y confunden a la hora
+            de
+            decidir. Acá los separamos con claridad para que elijas la tecnología correcta según cómo te contactan tus
+            clientes.</p>
 
-        <div class="answer-box">
-          <span class="lbl">Respuesta rápida</span>
-          <p>Un <strong>voicebot</strong> conversa por voz (teléfono), un <strong>chatbot</strong> conversa por texto
-            (web/WhatsApp) y un <strong>agente de IA</strong> es la tecnología de fondo —IA generativa que entiende y
-            ejecuta— que puede operar en cualquiera de esos canales. Si recibís muchas llamadas, voicebot; si te
-            escriben, chatbot; lo ideal es combinarlos con una estrategia omnicanal.</p>
-        </div>
+          <div class="answer-box">
+            <span class="lbl">Respuesta rápida</span>
+            <p>Un <strong>voicebot</strong> conversa por voz (teléfono), un <strong>chatbot</strong> conversa por texto
+              (web/WhatsApp) y un <strong>agente de IA</strong> es la tecnología de fondo —IA generativa que entiende y
+              ejecuta— que puede operar en cualquiera de esos canales. Si recibís muchas llamadas, voicebot; si te
+              escriben, chatbot; lo ideal es combinarlos con una estrategia omnicanal.</p>
+          </div>
 
-        <div class="article-body">
-          <h2>Las tres tecnologías, en una tabla</h2>
-          <table class="cmp-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th>Chatbot tradicional</th>
-                <th>Voicebot</th>
-                <th>Agente de IA</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>Canal</th>
-                <td>Texto (web, WhatsApp)</td>
-                <td>Voz (teléfono)</td>
-                <td>Voz y/o texto</td>
-              </tr>
-              <tr>
-                <th>Tecnología</th>
-                <td>Reglas y flujos fijos</td>
-                <td>Voz + IA</td>
-                <td>IA generativa</td>
-              </tr>
-              <tr>
-                <th>Entiende lenguaje natural</th>
-                <td>Limitado</td>
-                <td>Sí</td>
-                <td>Sí, con razonamiento</td>
-              </tr>
-              <tr>
-                <th>Ejecuta gestiones reales</th>
-                <td>Básico</td>
-                <td>Sí</td>
-                <td>Sí, integrado a tus sistemas</td>
-              </tr>
-              <tr>
-                <th>Mejor para</th>
-                <td>FAQs simples</td>
-                <td>Atención telefónica</td>
-                <td>Automatización avanzada</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="article-body">
+            <h2>Las tres tecnologías, en una tabla</h2>
+            <table class="cmp-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Chatbot tradicional</th>
+                  <th>Voicebot</th>
+                  <th>Agente de IA</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Canal</th>
+                  <td>Texto (web, WhatsApp)</td>
+                  <td>Voz (teléfono)</td>
+                  <td>Voz y/o texto</td>
+                </tr>
+                <tr>
+                  <th>Tecnología</th>
+                  <td>Reglas y flujos fijos</td>
+                  <td>Voz + IA</td>
+                  <td>IA generativa</td>
+                </tr>
+                <tr>
+                  <th>Entiende lenguaje natural</th>
+                  <td>Limitado</td>
+                  <td>Sí</td>
+                  <td>Sí, con razonamiento</td>
+                </tr>
+                <tr>
+                  <th>Ejecuta gestiones reales</th>
+                  <td>Básico</td>
+                  <td>Sí</td>
+                  <td>Sí, integrado a tus sistemas</td>
+                </tr>
+                <tr>
+                  <th>Mejor para</th>
+                  <td>FAQs simples</td>
+                  <td>Atención telefónica</td>
+                  <td>Automatización avanzada</td>
+                </tr>
+              </tbody>
+            </table>
 
-          <h2>1. Chatbot tradicional</h2>
-          <p>Es el más conocido: un asistente de texto que sigue <strong>árboles de decisión predefinidos</strong>.
-            Funciona bien para preguntas frecuentes y derivaciones simples, pero se frustra rápido cuando el usuario
-            sale del guion. Es la tecnología de "2023" que muchos sitios todavía tienen.</p>
+            <h2>1. Chatbot tradicional</h2>
+            <p>Es el más conocido: un asistente de texto que sigue <strong>árboles de decisión predefinidos</strong>.
+              Funciona bien para preguntas frecuentes y derivaciones simples, pero se frustra rápido cuando el usuario
+              sale del guion. Es la tecnología de "2023" que muchos sitios todavía tienen.</p>
 
-          <h2>2. Voicebot</h2>
-          <p>Lleva la conversación al <strong>teléfono</strong>. Atiende llamadas con voz natural, ideal para públicos
-            que prefieren llamar o para gestiones que históricamente pasan por un call center: turnos, saldos, reclamos,
-            cobranzas. Lo explicamos a fondo en <a href="que-es-un-voicebot.html">¿Qué es un voicebot?</a>.</p>
+            <h2>2. Voicebot</h2>
+            <p>Lleva la conversación al <strong>teléfono</strong>. Atiende llamadas con voz natural, ideal para públicos
+              que prefieren llamar o para gestiones que históricamente pasan por un call center: turnos, saldos,
+              reclamos,
+              cobranzas. Lo explicamos a fondo en <a href="que-es-un-voicebot.html">¿Qué es un voicebot?</a>.</p>
 
-          <h2>3. Agente de IA</h2>
-          <p>No es un canal, es <strong>cómo piensa</strong> el sistema. Un agente de IA usa IA generativa para entender
-            la intención, razonar sobre el contexto y ejecutar acciones consultando tu CRM, ERP o agenda. Puede
-            manifestarse como voicebot (voz) o como chatbot moderno (texto). Es la diferencia entre "responder" y
-            "resolver".</p>
+            <h2>3. Agente de IA</h2>
+            <p>No es un canal, es <strong>cómo piensa</strong> el sistema. Un agente de IA usa IA generativa para
+              entender
+              la intención, razonar sobre el contexto y ejecutar acciones consultando tu CRM, ERP o agenda. Puede
+              manifestarse como voicebot (voz) o como chatbot moderno (texto). Es la diferencia entre "responder" y
+              "resolver".</p>
 
-          <blockquote>La pregunta no es "voicebot o chatbot", sino "¿dónde están mis clientes y qué necesitan
-            resolver?".</blockquote>
+            <blockquote>La pregunta no es "voicebot o chatbot", sino "¿dónde están mis clientes y qué necesitan
+              resolver?".</blockquote>
 
-          <h2>Cómo elegir</h2>
-          <ul>
-            <li><strong>¿Recibís volumen de llamadas?</strong> Empezá por un voicebot.</li>
-            <li><strong>¿Te escriben por WhatsApp o web?</strong> Un agente de IA de texto.</li>
-            <li><strong>¿Ambas cosas?</strong> Una estrategia <strong>omnicanal</strong>: el mismo agente de IA
-              atendiendo voz y texto, con una sola base de conocimiento.</li>
-          </ul>
-
-          <div class="key-takeaways">
-            <h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-                <path d="M9 11l3 3 8-8M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg> Puntos clave</h4>
+            <h2>Cómo elegir</h2>
             <ul>
-              <li>Voicebot = voz; chatbot = texto; agente de IA = la inteligencia detrás.</li>
-              <li>Los chatbots de reglas fijas quedaron atrás frente a la IA generativa.</li>
-              <li>La estrategia ganadora suele ser omnicanal: un agente, todos los canales.</li>
+              <li><strong>¿Recibís volumen de llamadas?</strong> Empezá por un voicebot.</li>
+              <li><strong>¿Te escriben por WhatsApp o web?</strong> Un agente de IA de texto.</li>
+              <li><strong>¿Ambas cosas?</strong> Una estrategia <strong>omnicanal</strong>: el mismo agente de IA
+                atendiendo voz y texto, con una sola base de conocimiento.</li>
             </ul>
+
+            <div class="key-takeaways">
+              <h4><svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                  <path d="M9 11l3 3 8-8M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg> Puntos clave</h4>
+              <ul>
+                <li>Voicebot = voz; chatbot = texto; agente de IA = la inteligencia detrás.</li>
+                <li>Los chatbots de reglas fijas quedaron atrás frente a la IA generativa.</li>
+                <li>La estrategia ganadora suele ser omnicanal: un agente, todos los canales.</li>
+              </ul>
+            </div>
+
+            <div class="mini-faq">
+              <h2>Preguntas frecuentes</h2>
+              <details open>
+                <summary>¿Puedo tener voicebot y chatbot a la vez?</summary>
+                <div class="a">
+                  <p>Sí. Con un enfoque omnicanal, el mismo agente de IA atiende voz y texto compartiendo conocimiento,
+                    así el cliente vive una experiencia coherente sin importar el canal.</p>
+                </div>
+              </details>
+              <details>
+                <summary>¿Migrar de un chatbot viejo es complicado?</summary>
+                <div class="a">
+                  <p>En GrupoCESA partimos de tus flujos actuales y los potenciamos con IA generativa, integrando tus
+                    sistemas. La etapa de descubrimiento define el plan de migración.</p>
+                </div>
+              </details>
+            </div>
           </div>
 
-          <div class="mini-faq">
-            <h2>Preguntas frecuentes</h2>
-            <details open>
-              <summary>¿Puedo tener voicebot y chatbot a la vez?</summary>
-              <div class="a">
-                <p>Sí. Con un enfoque omnicanal, el mismo agente de IA atiende voz y texto compartiendo conocimiento,
-                  así el cliente vive una experiencia coherente sin importar el canal.</p>
-              </div>
-            </details>
-            <details>
-              <summary>¿Migrar de un chatbot viejo es complicado?</summary>
-              <div class="a">
-                <p>En GrupoCESA partimos de tus flujos actuales y los potenciamos con IA generativa, integrando tus
-                  sistemas. La etapa de descubrimiento define el plan de migración.</p>
-              </div>
-            </details>
+          <div class="article-cta">
+            <h3>¿No estás seguro de cuál te conviene?</h3>
+            <p>Contanos cómo te contactan tus clientes y te recomendamos el enfoque correcto, con una demo de Aris.</p>
+            <a href="../index.html#contacto" class="btn btn-primary btn-lg">Hablar con un especialista</a>
+          </div>
+
+          <div class="byline">
+            <span class="av"></span>
+            <div><b>Equipo GrupoCESA</b><span>Comunicaciones unificadas e IA conversacional · Argentina</span></div>
           </div>
         </div>
+      </article>
 
-        <div class="article-cta">
-          <h3>¿No estás seguro de cuál te conviene?</h3>
-          <p>Contanos cómo te contactan tus clientes y te recomendamos el enfoque correcto, con una demo de Aris.</p>
-          <a href="../index.html#contacto" class="btn btn-primary btn-lg">Hablar con un especialista</a>
+      <section class="related">
+        <div class="wrap">
+          <h2>Seguí leyendo</h2>
+          <div class="blog-grid">
+            <article class="post-card">
+              <a href="que-es-un-voicebot.html" class="post-thumb g3" aria-label="Qué es un voicebot"><svg
+                  viewBox="0 0 24 24">
+                  <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
+                  <path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke-linecap="round" />
+                </svg></a>
+              <div class="post-body"><span class="post-cat">Voicebot</span>
+                <h3><a href="que-es-un-voicebot.html">¿Qué es un voicebot y cómo funciona?</a></h3>
+                <p>La guía completa.</p>
+                <div class="post-meta"><span>8 min</span></div>
+              </div>
+            </article>
+            <article class="post-card">
+              <a href="ia-cobranzas-atencion-argentina.html" class="post-thumb g2" aria-label="IA en cobranzas"><svg
+                  viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="9" />
+                  <path
+                    d="M14.5 9a2.5 2.5 0 0 0-2.5-1.5c-1.4 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.9 2.5 2-1.1 2-2.5 2A2.5 2.5 0 0 1 9.5 15"
+                    stroke-linecap="round" />
+                </svg></a>
+              <div class="post-body"><span class="post-cat">Casos de uso</span>
+                <h3><a href="ia-cobranzas-atencion-argentina.html">IA en cobranzas y atención en Argentina</a></h3>
+                <p>5 casos reales.</p>
+                <div class="post-meta"><span>7 min</span></div>
+              </div>
+            </article>
+          </div>
         </div>
+      </section>
+    </main>
 
-        <div class="byline">
-          <span class="av"></span>
-          <div><b>Equipo GrupoCESA</b><span>Comunicaciones unificadas e IA conversacional · Argentina</span></div>
-        </div>
-      </div>
-    </article>
-
-    <section class="related">
+    <footer class="site-footer">
       <div class="wrap">
-        <h2>Seguí leyendo</h2>
-        <div class="blog-grid">
-          <article class="post-card">
-            <a href="que-es-un-voicebot.html" class="post-thumb g3" aria-label="Qué es un voicebot"><svg
-                viewBox="0 0 24 24">
-                <path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z" />
-                <path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke-linecap="round" />
-              </svg></a>
-            <div class="post-body"><span class="post-cat">Voicebot</span>
-              <h3><a href="que-es-un-voicebot.html">¿Qué es un voicebot y cómo funciona?</a></h3>
-              <p>La guía completa.</p>
-              <div class="post-meta"><span>8 min</span></div>
-            </div>
-          </article>
-          <article class="post-card">
-            <a href="ia-cobranzas-atencion-argentina.html" class="post-thumb g2" aria-label="IA en cobranzas"><svg
-                viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="9" />
-                <path
-                  d="M14.5 9a2.5 2.5 0 0 0-2.5-1.5c-1.4 0-2.5.8-2.5 2s1 1.6 2.5 2 2.5.9 2.5 2-1.1 2-2.5 2A2.5 2.5 0 0 1 9.5 15"
-                  stroke-linecap="round" />
-              </svg></a>
-            <div class="post-body"><span class="post-cat">Casos de uso</span>
-              <h3><a href="ia-cobranzas-atencion-argentina.html">IA en cobranzas y atención en Argentina</a></h3>
-              <p>5 casos reales.</p>
-              <div class="post-meta"><span>7 min</span></div>
-            </div>
-          </article>
+        <div class="foot-bottom" style="border-top:none;padding-top:0">
+          <span>© 2026 GrupoCESA — Empresa argentina de comunicaciones unificadas e IA conversacional. Partner oficial
+            Yeastar.</span>
+          <div class="foot-social" style="gap:18px;font-size:14px">
+            <a href="../legal/politica-privacidad.html" style="width:auto;height:auto;border:none">Privacidad</a>
+            <a href="../legal/terminos-condiciones.html" style="width:auto;height:auto;border:none">Términos</a>
+            <a href="../legal/politica-cookies.html" style="width:auto;height:auto;border:none">Cookies</a>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
+    <script>
+      /* ============================================================
+         GrupoCESA — Banner de consentimiento de cookies
+         Autónomo: inyecta estilos + DOM, guarda elección en localStorage.
+         Dispara window.dataLayer push y un evento 'cookie-consent' para
+         que actives Analytics/Ads sólo si el usuario acepta.
+         ============================================================ */
+      (function () {
+        'use strict';
+        var KEY = 'gcesa_cookie_consent_v1';
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="foot-bottom" style="border-top:none;padding-top:0">
-        <span>© 2026 GrupoCESA — Empresa argentina de comunicaciones unificadas e IA conversacional. Partner oficial
-          Yeastar.</span>
-        <div class="foot-social" style="gap:18px;font-size:14px">
-          <a href="../legal/politica-privacidad.html" style="width:auto;height:auto;border:none">Privacidad</a>
-          <a href="../legal/terminos-condiciones.html" style="width:auto;height:auto;border:none">Términos</a>
-          <a href="../legal/politica-cookies.html" style="width:auto;height:auto;border:none">Cookies</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <script>
-    /* ============================================================
-       GrupoCESA — Banner de consentimiento de cookies
-       Autónomo: inyecta estilos + DOM, guarda elección en localStorage.
-       Dispara window.dataLayer push y un evento 'cookie-consent' para
-       que actives Analytics/Ads sólo si el usuario acepta.
-       ============================================================ */
-    (function () {
-      'use strict';
-      var KEY = 'gcesa_cookie_consent_v1';
-
-      // No mostrar si ya eligió
-      var saved = null;
-      try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { }
-      function fireConsent(state) {
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({ event: 'cookie_consent_update', consent: state });
-        window.dispatchEvent(new CustomEvent('cookie-consent', { detail: state }));
-      }
-      if (saved && saved.choice) { fireConsent(saved); return; }
-
-      // Detectar prefijo de ruta (home vs subpáginas) para enlazar la política
-      var prefix = /\/(blog|legal)\//.test(location.pathname) ? '../' : '';
-      var cookiesUrl = prefix + 'legal/politica-cookies.html';
-
-      // ---- estilos ----
-      var css = '' +
-        '.cc-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;max-width:560px;margin:0 auto;' +
-        'background:var(--surface,#0E1812);color:var(--text,#E9F4ED);border:1px solid var(--border-strong,rgba(120,224,170,.26));' +
-        'border-radius:18px;padding:22px 24px;box-shadow:0 30px 80px -30px rgba(0,0,0,.7);' +
-        'font-family:var(--font-body,system-ui,sans-serif);transform:translateY(140%);transition:transform .5s cubic-bezier(.22,.61,.36,1)}' +
-        '.cc-banner.in{transform:none}' +
-        '.cc-banner h4{font-family:var(--font-head,system-ui,sans-serif);font-size:16px;margin:0 0 8px;font-weight:600;display:flex;align-items:center;gap:9px}' +
-        '.cc-banner h4 svg{width:19px;height:19px;stroke:var(--accent,#10B85F);flex:none}' +
-        '.cc-banner p{font-size:13.5px;line-height:1.55;color:var(--text-dim,#9CB3A7);margin:0 0 16px}' +
-        '.cc-banner p a{color:var(--accent,#10B85F);text-decoration:underline;text-underline-offset:2px}' +
-        '.cc-actions{display:flex;flex-wrap:wrap;gap:10px}' +
-        '.cc-btn{font-family:inherit;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .2s,background .2s,border-color .2s}' +
-        '.cc-btn:hover{transform:translateY(-1px)}' +
-        '.cc-accept{background:var(--accent,#10B85F);color:#04130B}' +
-        '.cc-reject{background:transparent;color:var(--text,#E9F4ED);border-color:var(--border-strong,rgba(120,224,170,.26))}' +
-        '.cc-config{background:transparent;color:var(--text-dim,#9CB3A7);border:none;padding:11px 8px;text-decoration:underline;text-underline-offset:3px}' +
-        '.cc-prefs{display:none;margin:4px 0 16px;border-top:1px solid var(--border,rgba(120,224,170,.13));padding-top:14px}' +
-        '.cc-prefs.show{display:block}' +
-        '.cc-row{display:flex;align-items:flex-start;gap:12px;padding:9px 0}' +
-        '.cc-row label{font-size:13.5px;font-weight:600;color:var(--text,#E9F4ED);display:block}' +
-        '.cc-row small{font-size:12px;color:var(--text-dim,#9CB3A7);display:block;margin-top:2px}' +
-        '.cc-row input{width:18px;height:18px;margin-top:2px;accent-color:var(--accent,#10B85F);flex:none}' +
-        '.cc-row input:disabled{opacity:.5}' +
-        '@media(max-width:520px){.cc-actions{flex-direction:column}.cc-btn{width:100%}}';
-      var style = document.createElement('style');
-      style.textContent = css;
-      document.head.appendChild(style);
-
-      // ---- DOM ----
-      var banner = document.createElement('div');
-      banner.className = 'cc-banner';
-      banner.setAttribute('role', 'dialog');
-      banner.setAttribute('aria-label', 'Consentimiento de cookies');
-      banner.innerHTML =
-        '<h4><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="14" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="8" r="1" fill="currentColor" stroke="none"/></svg> Usamos cookies</h4>' +
-        '<p>Usamos cookies propias y de terceros para que el sitio funcione, analizar el tráfico y medir nuestras campañas. Podés aceptar todas, rechazarlas o elegir. Más info en nuestra <a href="' + cookiesUrl + '">Política de cookies</a>.</p>' +
-        '<div class="cc-prefs" id="ccPrefs">' +
-        '<div class="cc-row"><input type="checkbox" checked disabled><div><label>Necesarias</label><small>Imprescindibles para el funcionamiento del sitio. Siempre activas.</small></div></div>' +
-        '<div class="cc-row"><input type="checkbox" id="ccAnalytics" checked><div><label>Analíticas</label><small>Nos ayudan a entender el uso del sitio (ej. Google Analytics).</small></div></div>' +
-        '<div class="cc-row"><input type="checkbox" id="ccMarketing" checked><div><label>Marketing</label><small>Medición de campañas y anuncios (ej. Google Ads).</small></div></div>' +
-        '</div>' +
-        '<div class="cc-actions">' +
-        '<button class="cc-btn cc-accept" id="ccAccept">Aceptar todas</button>' +
-        '<button class="cc-btn cc-reject" id="ccReject">Rechazar</button>' +
-        '<button class="cc-btn cc-config" id="ccConfig">Configurar</button>' +
-        '</div>';
-      document.body.appendChild(banner);
-      requestAnimationFrame(function () { setTimeout(function () { banner.classList.add('in'); }, 300); });
-
-      function save(choice, analytics, marketing) {
-        var state = { choice: choice, necessary: true, analytics: analytics, marketing: marketing, ts: Date.now() };
-        try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { }
-        fireConsent(state);
-        banner.classList.remove('in');
-        setTimeout(function () { banner.remove(); }, 500);
-      }
-
-      document.getElementById('ccAccept').addEventListener('click', function () { save('accept_all', true, true); });
-      document.getElementById('ccReject').addEventListener('click', function () { save('reject', false, false); });
-      document.getElementById('ccConfig').addEventListener('click', function () {
-        var prefs = document.getElementById('ccPrefs');
-        var btn = this;
-        if (prefs.classList.contains('show')) {
-          // segundo click = guardar selección
-          save('custom', document.getElementById('ccAnalytics').checked, document.getElementById('ccMarketing').checked);
-        } else {
-          prefs.classList.add('show');
-          btn.textContent = 'Guardar selección';
+        // No mostrar si ya eligió
+        var saved = null;
+        try { saved = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { }
+        function fireConsent(state) {
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: 'cookie_consent_update', consent: state });
+          window.dispatchEvent(new CustomEvent('cookie-consent', { detail: state }));
         }
-      });
-    })();
+        if (saved && saved.choice) { fireConsent(saved); return; }
 
-  </script>
+        // Detectar prefijo de ruta (home vs subpáginas) para enlazar la política
+        var prefix = /\/(blog|legal)\//.test(location.pathname) ? '../' : '';
+        var cookiesUrl = prefix + 'legal/politica-cookies.html';
 
-  <!-- theme-toggle script -->
-  <script>
-    (function () {
-      const btn = document.getElementById('theme-toggle');
-      if (btn) {
-        const moonIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
-        const sunIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+        // ---- estilos ----
+        var css = '' +
+          '.cc-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:2147483000;max-width:560px;margin:0 auto;' +
+          'background:var(--surface,#0E1812);color:var(--text,#E9F4ED);border:1px solid var(--border-strong,rgba(120,224,170,.26));' +
+          'border-radius:18px;padding:22px 24px;box-shadow:0 30px 80px -30px rgba(0,0,0,.7);' +
+          'font-family:var(--font-body,system-ui,sans-serif);transform:translateY(140%);transition:transform .5s cubic-bezier(.22,.61,.36,1)}' +
+          '.cc-banner.in{transform:none}' +
+          '.cc-banner h4{font-family:var(--font-head,system-ui,sans-serif);font-size:16px;margin:0 0 8px;font-weight:600;display:flex;align-items:center;gap:9px}' +
+          '.cc-banner h4 svg{width:19px;height:19px;stroke:var(--accent,#10B85F);flex:none}' +
+          '.cc-banner p{font-size:13.5px;line-height:1.55;color:var(--text-dim,#9CB3A7);margin:0 0 16px}' +
+          '.cc-banner p a{color:var(--accent,#10B85F);text-decoration:underline;text-underline-offset:2px}' +
+          '.cc-actions{display:flex;flex-wrap:wrap;gap:10px}' +
+          '.cc-btn{font-family:inherit;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .2s,background .2s,border-color .2s}' +
+          '.cc-btn:hover{transform:translateY(-1px)}' +
+          '.cc-accept{background:var(--accent,#10B85F);color:#04130B}' +
+          '.cc-reject{background:transparent;color:var(--text,#E9F4ED);border-color:var(--border-strong,rgba(120,224,170,.26))}' +
+          '.cc-config{background:transparent;color:var(--text-dim,#9CB3A7);border:none;padding:11px 8px;text-decoration:underline;text-underline-offset:3px}' +
+          '.cc-prefs{display:none;margin:4px 0 16px;border-top:1px solid var(--border,rgba(120,224,170,.13));padding-top:14px}' +
+          '.cc-prefs.show{display:block}' +
+          '.cc-row{display:flex;align-items:flex-start;gap:12px;padding:9px 0}' +
+          '.cc-row label{font-size:13.5px;font-weight:600;color:var(--text,#E9F4ED);display:block}' +
+          '.cc-row small{font-size:12px;color:var(--text-dim,#9CB3A7);display:block;margin-top:2px}' +
+          '.cc-row input{width:18px;height:18px;margin-top:2px;accent-color:var(--accent,#10B85F);flex:none}' +
+          '.cc-row input:disabled{opacity:.5}' +
+          '@media(max-width:520px){.cc-actions{flex-direction:column}.cc-btn{width:100%}}';
+        var style = document.createElement('style');
+        style.textContent = css;
+        document.head.appendChild(style);
 
-        // Set initial icon
-        const currentVariant = document.documentElement.getAttribute('data-variant');
-        btn.innerHTML = currentVariant === 'aurora' ? sunIcon : moonIcon;
+        // ---- DOM ----
+        var banner = document.createElement('div');
+        banner.className = 'cc-banner';
+        banner.setAttribute('role', 'dialog');
+        banner.setAttribute('aria-label', 'Consentimiento de cookies');
+        banner.innerHTML =
+          '<h4><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><circle cx="9" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="14" cy="14" r="1.2" fill="currentColor" stroke="none"/><circle cx="15" cy="8" r="1" fill="currentColor" stroke="none"/></svg> Usamos cookies</h4>' +
+          '<p>Usamos cookies propias y de terceros para que el sitio funcione, analizar el tráfico y medir nuestras campañas. Podés aceptar todas, rechazarlas o elegir. Más info en nuestra <a href="' + cookiesUrl + '">Política de cookies</a>.</p>' +
+          '<div class="cc-prefs" id="ccPrefs">' +
+          '<div class="cc-row"><input type="checkbox" checked disabled><div><label>Necesarias</label><small>Imprescindibles para el funcionamiento del sitio. Siempre activas.</small></div></div>' +
+          '<div class="cc-row"><input type="checkbox" id="ccAnalytics" checked><div><label>Analíticas</label><small>Nos ayudan a entender el uso del sitio (ej. Google Analytics).</small></div></div>' +
+          '<div class="cc-row"><input type="checkbox" id="ccMarketing" checked><div><label>Marketing</label><small>Medición de campañas y anuncios (ej. Google Ads).</small></div></div>' +
+          '</div>' +
+          '<div class="cc-actions">' +
+          '<button class="cc-btn cc-accept" id="ccAccept">Aceptar todas</button>' +
+          '<button class="cc-btn cc-reject" id="ccReject">Rechazar</button>' +
+          '<button class="cc-btn cc-config" id="ccConfig">Configurar</button>' +
+          '</div>';
+        document.body.appendChild(banner);
+        requestAnimationFrame(function () { setTimeout(function () { banner.classList.add('in'); }, 300); });
 
-        btn.addEventListener('click', () => {
-          const isDark = document.documentElement.getAttribute('data-variant') === 'aurora';
-          const newTheme = isDark ? 'signal' : 'aurora';
-          document.documentElement.setAttribute('data-variant', newTheme);
-          localStorage.setItem('gcesa-theme', newTheme);
-          btn.innerHTML = isDark ? moonIcon : sunIcon;
+        function save(choice, analytics, marketing) {
+          var state = { choice: choice, necessary: true, analytics: analytics, marketing: marketing, ts: Date.now() };
+          try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { }
+          fireConsent(state);
+          banner.classList.remove('in');
+          setTimeout(function () { banner.remove(); }, 500);
+        }
+
+        document.getElementById('ccAccept').addEventListener('click', function () { save('accept_all', true, true); });
+        document.getElementById('ccReject').addEventListener('click', function () { save('reject', false, false); });
+        document.getElementById('ccConfig').addEventListener('click', function () {
+          var prefs = document.getElementById('ccPrefs');
+          var btn = this;
+          if (prefs.classList.contains('show')) {
+            // segundo click = guardar selección
+            save('custom', document.getElementById('ccAnalytics').checked, document.getElementById('ccMarketing').checked);
+          } else {
+            prefs.classList.add('show');
+            btn.textContent = 'Guardar selección';
+          }
         });
+      })();
+
+    </script>
+
+    <!-- theme-toggle script -->
+    <script>
+      (function () {
+        const btn = document.getElementById('theme-toggle');
+        if (btn) {
+          const moonIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
+          const sunIcon = '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
+
+          // Set initial icon
+          const currentVariant = document.documentElement.getAttribute('data-variant');
+          btn.innerHTML = currentVariant === 'aurora' ? sunIcon : moonIcon;
+
+          btn.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-variant') === 'aurora';
+            const newTheme = isDark ? 'signal' : 'aurora';
+            document.documentElement.setAttribute('data-variant', newTheme);
+            localStorage.setItem('gcesa-theme', newTheme);
+            btn.innerHTML = isDark ? moonIcon : sunIcon;
+          });
+        }
+      })();
+    </script>
+
+    <!-- HiBot Chat Widget -->
+    <script>
+      if (window.ENV && window.ENV.CHAT_CHANNEL_ID) {
+        var s = document.createElement('script');
+        s.defer = true;
+        s.src = "https://livechat.hibot.us/hibot-chat.min.js";
+        s.setAttribute('data-channel', window.ENV.CHAT_CHANNEL_ID);
+        s.id = "livechat";
+        document.body.appendChild(s);
       }
-    })();
-  </script>
+    </script>
+
 </body>
 
 </html>

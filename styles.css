@@ -2529,33 +2529,6 @@ textarea {
   }
 }
 
-/* WhatsApp float */
-.wa-float {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 60;
-  width: 58px;
-  height: 58px;
-  border-radius: 50%;
-  background: #25D366;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 14px 34px -8px rgba(37, 211, 102, .6);
-  transition: transform .25s var(--ease)
-}
-
-.wa-float:hover {
-  transform: scale(1.08)
-}
-
-.wa-float svg {
-  width: 30px;
-  height: 30px;
-  fill: #fff
-}
-
 /* ============================================================
    Reveal — pure CSS entrance (always ends visible; no JS dependency)
    ============================================================ */
@@ -2714,11 +2687,11 @@ html[data-variant="aurora"] .logo-cell img {
 }
 
 .logo-cell img.defensoria-logo {
-  transform: scale(1.7);
+  transform: scale(2.5);
 }
 
 .logo-cell img.defensoria-logo:hover {
-  transform: scale(1.9);
+  transform: scale(2.7);
 }
 
 .logo-cell img.henry-moore-logo {
@@ -2730,11 +2703,11 @@ html[data-variant="aurora"] .logo-cell img {
 }
 
 .logo-cell img.ineba-logo {
-  transform: scale(1.9);
+  transform: scale(2.9);
 }
 
 .logo-cell img.ineba-logo:hover {
-  transform: scale(2.1);
+  transform: scale(3.1);
 }
 
 .logo-cell img.mas_vida_logo {
@@ -2753,6 +2726,14 @@ html[data-variant="aurora"] .logo-cell img {
   transform: scale(1.9);
 }
 
+.logo-cell img.favaloro-logo {
+  transform: scale(1.7);
+}
+
+.logo-cell img.favaloro-logo:hover {
+  transform: scale(1.9);
+}
+
 html[data-variant="aurora"] .logo-cell img:hover {
-  filter: grayscale(0%) invert(1) brightness(1) opacity(100%);
+  filter: grayscale(0%) opacity(100%);
 }
