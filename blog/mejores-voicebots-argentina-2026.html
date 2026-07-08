@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es-AR" >
 <script>!function(){var t=localStorage.getItem("gcesa-theme")||"signal";document.documentElement.setAttribute("data-variant",t)}();</script>
 
@@ -108,23 +108,35 @@
 <body>
   <div class="bg-grid" aria-hidden="true"></div>
 
-  <header class="sub-header">
+  <header class="site-header" id="header">
     <div class="wrap nav">
-      <a class="brand" href="../index.html" aria-label="GrupoCESA inicio">
+      <a class="brand" href="../index.html#top" aria-label="GrupoCESA inicio">
         <svg class="logo-ico" viewBox="0 0 40 40" fill="none" aria-hidden="true">
           <path class="solid" d="M20 4 A16 16 0 0 0 20 36" stroke-width="4.6" stroke-linecap="round" />
-          <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round"
-            stroke-dasharray="0.1 9" />
+          <path class="dots" d="M20 4 A16 16 0 0 1 20 36" stroke-width="4.6" stroke-linecap="round" stroke-dasharray="0.1 9" />
         </svg>
         <span><b>Grupo</b>CESA</span>
       </a>
-      <a class="back-link" href="index.html">
-        <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-          <path d="M19 12H5M11 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-        Volver al blog
-      </a>
-      <button id="theme-toggle" class="btn btn-ghost" style="padding: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin-left: auto;" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+      <div class="nav-right" style="display:flex;align-items:center;gap:32px;">
+        <nav class="nav-links" aria-label="Principal">
+          <div class="nav-dropdown">
+            <a href="../index.html#soluciones">Soluciones <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:2px"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
+            <div class="nav-dropdown-content">
+              <a href="../omnicanalidad.html">Omnicanalidad y Chatbots IA</a>
+              <a href="../telefonia-ip.html">Telefonía IP</a>
+              <a href="../contact-center.html">Contact Center</a>
+              <a href="../voicebot-aris.html">VoiceBot ARIS</a>
+            </div>
+          </div>
+          <a href="../nosotros.html">Nosotros</a>
+          <a href="../index.html#casos">Casos de éxito</a>
+          <a href="index.html">Blog</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="../index.html#contacto" class="btn btn-primary">Contactar a ventas</a>
+          <button id="theme-toggle" class="btn btn-ghost" style="padding:10px;border-radius:50%;display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:8px" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
+        </div>
+      </div>
     </div>
   </header>
 
