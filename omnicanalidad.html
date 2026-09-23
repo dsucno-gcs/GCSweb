@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="subpage.css">
   <script src="analytics.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Omnicanalidad y Chatbots IA","serviceType":"Plataforma omnicanal","provider":{"@type":"Organization","name":"GrupoCESA","url":"https://www.grupocesa.net/"},"areaServed":["AR","CL","LATAM"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.grupocesa.net/"},{"@type":"ListItem","position":2,"name":"Omnicanalidad","item":"https://www.grupocesa.net/omnicanalidad.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Se pueden integrar mis números de WhatsApp actuales?","acceptedAnswer":{"@type":"Answer","text":"Sí, utilizamos la API oficial de WhatsApp Business para integrar tus números existentes sin necesidad de cambiar de proveedor."}},{"@type":"Question","name":"¿Qué canales soporta la plataforma?","acceptedAnswer":{"@type":"Answer","text":"WhatsApp, Instagram, Facebook Messenger, web chat, correo electrónico y canales de voz. Todo en una bandeja unificada."}},{"@type":"Question","name":"¿Los chatbots se pueden entrenar con datos de mi empresa?","acceptedAnswer":{"@type":"Answer","text":"Sí. Entrenamos los modelos con tu base de conocimiento, catálogos y procesos específicos para que el bot responda con precisión."}},{"@type":"Question","name":"¿Tienen soporte local en Argentina?","acceptedAnswer":{"@type":"Answer","text":"Sí, contamos con un equipo experto en Argentina para darte soporte ágil durante y después de la implementación."}}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Omnicanalidad y Chatbots IA","serviceType":"Plataforma omnicanal","provider":{"@type":"Organization","name":"GrupoCESA","url":"https://www.grupocesa.net/"},"areaServed":["AR","CL","LATAM"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.grupocesa.net/"},{"@type":"ListItem","position":2,"name":"Omnicanalidad","item":"https://www.grupocesa.net/omnicanalidad.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué canales soporta la plataforma omnicanal?","acceptedAnswer":{"@type":"Answer","text":"WhatsApp Business, Instagram, Facebook Messenger, email, chat web y más. Todos los canales se gestionan desde una única interfaz, sin cambiar de pantalla."}},{"@type":"Question","name":"¿Los chatbots entienden lenguaje natural o solo responden a opciones predefinidas?","acceptedAnswer":{"@type":"Answer","text":"Los chatbots que implementamos utilizan IA generativa y comprenden lenguaje natural. El cliente puede escribir con sus propias palabras, sin necesidad de elegir opciones de un menú."}},{"@type":"Question","name":"¿Se puede derivar a un agente humano cuando el bot no puede resolver la consulta?","acceptedAnswer":{"@type":"Answer","text":"Sí. La derivación a agente humano es configurable. El bot puede transferir la conversación con el historial completo, sin que el cliente tenga que repetir la información."}}]}]}
   </script>
 </head>
 <body>
@@ -39,22 +39,25 @@
       </a>
       <div class="nav-right" style="display:flex;align-items:center;gap:32px;">
         <nav class="nav-links" aria-label="Principal">
+          <a href="index.html#top">Inicio</a>
           <div class="nav-dropdown">
             <a href="index.html#soluciones">Soluciones <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:2px"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="nav-dropdown-content">
               <a href="omnicanalidad.html">Omnicanalidad y Chatbots IA</a>
               <a href="telefonia-ip.html">Telefonía IP</a>
               <a href="contact-center.html">Contact Center</a>
-              <a href="voicebot-aris.html">VoiceBot ARIS</a>
+              <a href="voicebot-aris.html">VoiceBot</a>
             </div>
           </div>
+          <a href="index.html#verticales">Sectores</a>
+          <a href="index.html#alianzas">Alianzas</a>
           <a href="nosotros.html">Nosotros</a>
           <a href="index.html#casos">Casos de éxito</a>
           <a href="blog/index.html">Blog</a>
         </nav>
         <div class="nav-cta">
           
-          <a href="index.html#contacto" class="btn btn-primary">Contactar a ventas</a>
+          <a href="index.html#contacto" class="btn btn-primary">Contactar ventas</a>
           <button id="theme-toggle" class="btn btn-ghost" style="padding:10px;border-radius:50%;display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:8px" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
         </div>
       </div>
@@ -69,11 +72,15 @@
         <span class="ai-pill" style="margin-bottom:14px;display:inline-flex">+ IA</span>
         <h1>Omnicanalidad y Chatbots IA.</h1>
         <p class="dek">Unificá voz, WhatsApp, web, redes y email en una bandeja única con ruteo inteligente que entiende la intención del cliente. Atendé más, con menos esfuerzo y sin perder ninguna conversación.</p>
+        <div class="hero-trust" style="margin:18px 0 0">
+          <span class="trust-pill">Partner certificado <b>Hibot</b></span>
+          <span class="trust-pill">Partner certificado <b>Call Bell</b></span>
+        </div>
         <div class="hero-actions" style="margin:26px 0 0">
-          <a href="index.html#contacto" class="btn btn-primary btn-lg">Solicitar demo gratuita
+          <a href="index.html?solucion=omnicanalidad&origen=omnicanalidad#contacto" class="btn btn-primary btn-lg">Solicitar demo gratuita
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
           </a>
-          <a href="index.html#contacto" class="btn btn-ghost btn-lg">Hablar con un especialista</a>
+          <a href="index.html?solucion=omnicanalidad&origen=omnicanalidad#contacto" class="btn btn-ghost btn-lg">Hablar con un especialista</a>
         </div>
       </div>
     </section>
@@ -180,20 +187,16 @@
         </div>
         <div class="faq-list">
           <details class="faq-item" open>
-            <summary><span>¿Se pueden integrar mis números de WhatsApp actuales?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Sí, utilizamos la API oficial de WhatsApp Business para integrar tus números existentes sin necesidad de cambiar de proveedor.</p></div>
+            <summary><span>¿Qué canales soporta la plataforma omnicanal?</span><i class="chev"></i></summary>
+            <div class="faq-a"><p>WhatsApp Business, Instagram, Facebook Messenger, email, chat web y más. Todos los canales se gestionan desde una única interfaz, sin cambiar de pantalla.</p></div>
           </details>
           <details class="faq-item">
-            <summary><span>¿Qué canales soporta la plataforma?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>WhatsApp, Instagram, Facebook Messenger, web chat, correo electrónico y canales de voz. Todo en una bandeja unificada.</p></div>
+            <summary><span>¿Los chatbots entienden lenguaje natural o solo responden a opciones predefinidas?</span><i class="chev"></i></summary>
+            <div class="faq-a"><p>Los chatbots que implementamos utilizan IA generativa y comprenden lenguaje natural. El cliente puede escribir con sus propias palabras, sin necesidad de elegir opciones de un menú.</p></div>
           </details>
           <details class="faq-item">
-            <summary><span>¿Los chatbots se pueden entrenar con datos de mi empresa?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Sí. Entrenamos los modelos con tu base de conocimiento, catálogos y procesos específicos para que el bot responda con precisión desde el primer día.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary><span>¿Cuánto tiempo lleva la implementación?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Una implementación básica puede estar operativa en 2 a 4 semanas. Proyectos con integraciones complejas toman entre 4 y 8 semanas.</p></div>
+            <summary><span>¿Se puede derivar a un agente humano cuando el bot no puede resolver la consulta?</span><i class="chev"></i></summary>
+            <div class="faq-a"><p>Sí. La derivación a agente humano es configurable. El bot puede transferir la conversación con el historial completo, sin que el cliente tenga que repetir la información.</p></div>
           </details>
         </div>
       </div>
@@ -205,7 +208,7 @@
         <div class="article-cta" style="margin-top:0">
           <h3>Transformá tu atención al cliente</h3>
           <p>Te mostramos la plataforma funcionando con un caso de uso de tu empresa.</p>
-          <a href="index.html#contacto" class="btn btn-primary btn-lg">Solicitar demo gratuita</a>
+          <a href="index.html?solucion=omnicanalidad&origen=omnicanalidad#contacto" class="btn btn-primary btn-lg">Solicitar demo gratuita</a>
         </div>
       </div>
     </section>
@@ -214,7 +217,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="foot-bottom" style="border-top:none;padding-top:0">
-        <span>© 2026 GrupoCESA — Empresa argentina de comunicaciones unificadas e IA conversacional. Operamos en Argentina, Chile y LATAM. Partner oficial Yeastar.</span>
+        <span>© 2026 GrupoCESA — Empresa argentina de comunicaciones unificadas e IA conversacional. Operamos en Argentina, Chile, Bolivia, Perú, USA y resto de LATAM. Diamond Partner Yeastar.</span>
         <div class="foot-social" style="gap:18px;font-size:14px">
           <a href="legal/politica-privacidad.html" style="width:auto;height:auto;border:none">Privacidad</a>
           <a href="legal/terminos-condiciones.html" style="width:auto;height:auto;border:none">Términos</a>

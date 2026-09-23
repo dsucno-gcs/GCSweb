@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="subpage.css">
   <script src="analytics.js"></script>
   <script type="application/ld+json">
-{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Contact Center en la nube","serviceType":"Software de Contact Center","provider":{"@type":"Organization","name":"GrupoCESA","url":"https://www.grupocesa.net/"},"areaServed":["AR","CL","LATAM"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.grupocesa.net/"},{"@type":"ListItem","position":2,"name":"Contact Center","item":"https://www.grupocesa.net/contact-center.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿La solución se adapta a equipos pequeños?","acceptedAnswer":{"@type":"Answer","text":"Sí, la plataforma es 100% escalable. Funciona con pocos agentes y crece con tu operación sin cambiar de sistema."}},{"@type":"Question","name":"¿Se puede integrar con mi CRM?","acceptedAnswer":{"@type":"Answer","text":"Sí. Ofrecemos integración via API con los principales CRMs del mercado. Los agentes ven el historial completo del cliente sin salir de la plataforma."}},{"@type":"Question","name":"¿Incluye grabación de llamadas?","acceptedAnswer":{"@type":"Answer","text":"Sí. La grabación automática está incluida. Podés buscar y reproducir llamadas, usarlas para auditoría de calidad o capacitación de agentes."}},{"@type":"Question","name":"¿Qué tipo de campañas soporta?","acceptedAnswer":{"@type":"Answer","text":"Campañas entrantes (inbound) y salientes (outbound). Marcadores predictivos, progresivos y preview. Todo configurable desde la plataforma."}}]}]}
+{"@context":"https://schema.org","@graph":[{"@type":"Service","name":"Contact Center en la nube","serviceType":"Software de Contact Center","provider":{"@type":"Organization","name":"GrupoCESA","url":"https://www.grupocesa.net/"},"areaServed":["AR","CL","LATAM"]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.grupocesa.net/"},{"@type":"ListItem","position":2,"name":"Contact Center","item":"https://www.grupocesa.net/contact-center.html"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿La solución de Contact Center requiere infraestructura propia?","acceptedAnswer":{"@type":"Answer","text":"No. La solución es 100% en la nube. No se requiere servidor propio ni hardware especializado. Solo se necesita una conexión a internet y los puestos de trabajo habituales."}},{"@type":"Question","name":"¿Puedo monitorear las llamadas y métricas en tiempo real?","acceptedAnswer":{"@type":"Answer","text":"Sí. La plataforma incluye supervisión en tiempo real: llamadas en curso, tiempos de espera, agentes disponibles y métricas de operación. El supervisor puede escuchar, susurrar o tomar llamadas desde el panel."}},{"@type":"Question","name":"¿El Contact Center se puede integrar con el VoiceBot o la plataforma omnicanal?","acceptedAnswer":{"@type":"Answer","text":"Sí. Las soluciones de GrupoCESA están diseñadas para integrarse entre sí. Es posible que el VoiceBot derive al Contact Center, o que el Contact Center gestione los canales de mensajería junto a las llamadas."}}]}]}
   </script>
 </head>
 <body>
@@ -39,22 +39,25 @@
       </a>
       <div class="nav-right" style="display:flex;align-items:center;gap:32px;">
         <nav class="nav-links" aria-label="Principal">
+          <a href="index.html#top">Inicio</a>
           <div class="nav-dropdown">
             <a href="index.html#soluciones">Soluciones <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:2px"><polyline points="6 9 12 15 18 9"></polyline></svg></a>
             <div class="nav-dropdown-content">
               <a href="omnicanalidad.html">Omnicanalidad y Chatbots IA</a>
               <a href="telefonia-ip.html">Telefonía IP</a>
               <a href="contact-center.html">Contact Center</a>
-              <a href="voicebot-aris.html">VoiceBot ARIS</a>
+              <a href="voicebot-aris.html">VoiceBot</a>
             </div>
           </div>
+          <a href="index.html#verticales">Sectores</a>
+          <a href="index.html#alianzas">Alianzas</a>
           <a href="nosotros.html">Nosotros</a>
           <a href="index.html#casos">Casos de éxito</a>
           <a href="blog/index.html">Blog</a>
         </nav>
         <div class="nav-cta">
           
-          <a href="index.html#contacto" class="btn btn-primary">Contactar a ventas</a>
+          <a href="index.html#contacto" class="btn btn-primary">Contactar ventas</a>
           <button id="theme-toggle" class="btn btn-ghost" style="padding:10px;border-radius:50%;display:flex;align-items:center;justify-content:center;width:42px;height:42px;margin-left:8px" aria-label="Cambiar tema"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button>
         </div>
       </div>
@@ -70,10 +73,10 @@
         <h1>Contact Center en la nube.</h1>
         <p class="dek">Gestión centralizada de interacciones para equipos de atención al cliente. Campañas entrantes y salientes, supervisión en vivo, grabación y métricas en tiempo real — todo en una plataforma escalable sin inversión inicial en hardware.</p>
         <div class="hero-actions" style="margin:26px 0 0">
-          <a href="index.html#contacto" class="btn btn-primary btn-lg">Solicitar demo gratuita
+          <a href="index.html?solucion=contact-center&origen=contact-center#contacto" class="btn btn-primary btn-lg">Solicitar demo gratuita
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
           </a>
-          <a href="index.html#contacto" class="btn btn-ghost btn-lg">Hablar con un especialista</a>
+          <a href="index.html?solucion=contact-center&origen=contact-center#contacto" class="btn btn-ghost btn-lg">Hablar con un especialista</a>
         </div>
       </div>
     </section>
@@ -180,20 +183,16 @@
         </div>
         <div class="faq-list">
           <details class="faq-item" open>
-            <summary><span>¿La solución se adapta a equipos pequeños?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Sí, la plataforma es 100% escalable. Funciona con pocos agentes y crece con tu operación sin cambiar de sistema ni enfrentar migraciones costosas.</p></div>
+            <summary><span>¿La solución de Contact Center requiere infraestructura propia?</span><i class="chev"></i></summary>
+            <div class="faq-a"><p>No. La solución es 100% en la nube. No se requiere servidor propio ni hardware especializado. Solo se necesita una conexión a internet y los puestos de trabajo habituales.</p></div>
           </details>
           <details class="faq-item">
-            <summary><span>¿Se puede integrar con mi CRM?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Sí. Ofrecemos integración via API con los principales CRMs del mercado. Los agentes ven el historial completo del cliente sin salir de la plataforma de contact center.</p></div>
+            <summary><span>¿Puedo monitorear las llamadas y métricas en tiempo real?</span><i class="chev"></i></summary>
+            <div class="faq-a"><p>Sí. La plataforma incluye supervisión en tiempo real: llamadas en curso, tiempos de espera, agentes disponibles y métricas de operación. El supervisor puede escuchar, susurrar o tomar llamadas desde el panel.</p></div>
           </details>
           <details class="faq-item">
-            <summary><span>¿Incluye grabación de llamadas?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Sí. La grabación automática está incluida. Podés buscar y reproducir llamadas por fecha, agente o número, y usarlas para auditoría de calidad o capacitación.</p></div>
-          </details>
-          <details class="faq-item">
-            <summary><span>¿Qué tipo de campañas soporta?</span><i class="chev"></i></summary>
-            <div class="faq-a"><p>Campañas entrantes (inbound) y salientes (outbound). Marcadores predictivos, progresivos y preview. Todo configurable desde la plataforma sin necesidad de desarrollo adicional.</p></div>
+            <summary><span>¿El Contact Center se puede integrar con el VoiceBot o la plataforma omnicanal?</span><i class="chev"></i></summary>
+            <div class="faq-a"><p>Sí. Las soluciones de GrupoCESA están diseñadas para integrarse entre sí. Es posible que el VoiceBot derive al Contact Center, o que el Contact Center gestione los canales de mensajería junto a las llamadas.</p></div>
           </details>
         </div>
       </div>
@@ -205,7 +204,7 @@
         <div class="article-cta" style="margin-top:0">
           <h3>Tomá el control de tu operación</h3>
           <p>Te mostramos la plataforma con un caso de uso real de tu equipo de atención.</p>
-          <a href="index.html#contacto" class="btn btn-primary btn-lg">Contactar a un especialista</a>
+          <a href="index.html?solucion=contact-center&origen=contact-center#contacto" class="btn btn-primary btn-lg">Contactar a un especialista</a>
         </div>
       </div>
     </section>
@@ -214,7 +213,7 @@
   <footer class="site-footer">
     <div class="wrap">
       <div class="foot-bottom" style="border-top:none;padding-top:0">
-        <span>© 2026 GrupoCESA — Empresa argentina de comunicaciones unificadas e IA conversacional. Operamos en Argentina, Chile y LATAM. Partner oficial Yeastar.</span>
+        <span>© 2026 GrupoCESA — Empresa argentina de comunicaciones unificadas e IA conversacional. Operamos en Argentina, Chile, Bolivia, Perú, USA y resto de LATAM. Diamond Partner Yeastar.</span>
         <div class="foot-social" style="gap:18px;font-size:14px">
           <a href="legal/politica-privacidad.html" style="width:auto;height:auto;border:none">Privacidad</a>
           <a href="legal/terminos-condiciones.html" style="width:auto;height:auto;border:none">Términos</a>
