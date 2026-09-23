@@ -2008,17 +2008,19 @@ html[data-variant="aurora"] .logo-item img {
   object-fit: contain
 }
 
+.partner-logo img.logo-lg {
+  max-height: 72px
+}
+
 html[data-variant="aurora"] .partner-logo img,
 html[data-variant="onyx"] .partner-logo img {
   filter: invert(1) brightness(1.6)
 }
 
-.pl-yeastar {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 30px;
-  letter-spacing: -.02em;
-  color: var(--text)
+.partner-logo img.no-invert,
+html[data-variant="aurora"] .partner-logo img.no-invert,
+html[data-variant="onyx"] .partner-logo img.no-invert {
+  filter: none
 }
 
 .pl-totalchat {
@@ -2032,14 +2034,6 @@ html[data-variant="onyx"] .partner-logo img {
 .pl-totalchat b {
   font-weight: 800;
   color: var(--accent)
-}
-
-.pl-callbell {
-  font-family: var(--font-head);
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: -.02em;
-  color: var(--text)
 }
 
 .partner-card h3 {
