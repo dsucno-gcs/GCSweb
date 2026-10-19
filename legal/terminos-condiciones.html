@@ -265,17 +265,19 @@ if (window.ENV && window.ENV.GTM_ID) {
     })();
   </script>
 
-<!-- HiBot Chat Widget -->
+<!-- Web Chat -->
 <script>
-if (window.ENV && window.ENV.CHAT_CHANNEL_ID) {
-  var s = document.createElement('script');
-  s.defer = true;
-  s.src = "https://livechat.hibot.us/hibot-chat.min.js";
-  s.setAttribute('data-channel', window.ENV.CHAT_CHANNEL_ID);
-  s.id = "livechat";
-  document.body.appendChild(s);
-}
+  window.connectChat = window.connectChat || { q: [] };
+  window.connectChat.q.push([
+    'init',
+    {
+      gatewayUrl: "https://webchat.wa-api.cloud",
+      siteKey: "wc_pk_FrSlphVB05xP5FOomMml2Q7802NuWpq8",
+      layout: "fullscreen",
+    },
+  ]);
 </script>
+<script async src="https://webchat.wa-api.cloud/v1/widget.js"></script>
 
 </body>
 
