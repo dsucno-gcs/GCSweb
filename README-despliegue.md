@@ -14,7 +14,6 @@ No requiere build ni servidor de aplicaciones: se sirve como archivos estáticos
 ├── subpage.css                  ← Estilos de blog y páginas legales
 ├── analytics.js                 ← GA4 + Google Ads (EDITAR IDs, ver §4)
 ├── cookie-consent.js            ← Banner de cookies (fuente; ya está inline en cada página)
-├── tweaks-panel.jsx             ← Solo para el editor de diseño; NO es necesario en producción
 ├── og-cover.jpg                 ← Imagen para compartir en redes (1200×630)
 ├── sitemap.xml                  ← Mapa del sitio (ajustar dominio, ver §3)
 ├── robots.txt                   ← Permite buscadores + bots de IA (ajustar dominio)
@@ -46,7 +45,7 @@ No requiere build ni servidor de aplicaciones: se sirve como archivos estáticos
 `cookie-consent.js`, `og-cover.jpg`, `sitemap.xml`, `robots.txt`, y las carpetas `assets/`,
 `blog/`, `legal/`.
 
-**No hace falta subir:** `tweaks-panel.jsx`, `GrupoCESA-Aris-standalone.html`, la carpeta
+**No hace falta subir:** `GrupoCESA-Aris-standalone.html`, la carpeta
 `screenshots/`. (No molestan si quedan, pero son innecesarios.)
 
 ---

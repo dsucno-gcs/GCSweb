@@ -36,7 +36,7 @@
   '.cc-actions{display:flex;flex-wrap:wrap;gap:10px}' +
   '.cc-btn{font-family:inherit;font-weight:700;font-size:14px;padding:11px 18px;border-radius:999px;cursor:pointer;border:1px solid transparent;transition:transform .2s,background .2s,border-color .2s}' +
   '.cc-btn:hover{transform:translateY(-1px)}' +
-  '.cc-accept{background:var(--accent,#10B85F);color:#04130B}' +
+  '.cc-accept{background:var(--accent,#10B85F);color:#fff}' +
   '.cc-reject{background:transparent;color:var(--text,#E9F4ED);border-color:var(--border-strong,rgba(120,224,170,.26))}' +
   '.cc-config{background:transparent;color:var(--text-dim,#9CB3A7);border:none;padding:11px 8px;text-decoration:underline;text-underline-offset:3px}' +
   '.cc-prefs{display:none;margin:4px 0 16px;border-top:1px solid var(--border,rgba(120,224,170,.13));padding-top:14px}' +
