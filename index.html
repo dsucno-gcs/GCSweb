@@ -180,7 +180,7 @@
   <script src="analytics.js"></script>
 </head>
 
-<body>
+<body class="home">
 
 
 
@@ -241,8 +241,7 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <span class="hero-badge"><span class="dot"></span> Empresa argentina &middot; &#9670; Diamond Partner Yeastar
-            &middot; 25 años en el rubro</span>
+          <span class="hero-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/></svg>Empresa argentina &middot; &#9670; Diamond Partner Yeastar</span>
           <h1>Las comunicaciones de tu empresa, resueltas de punta a punta.</h1>
           <p class="lead">Telefonía IP, omnicanalidad, chatbots con IA y VoiceBot - las soluciones que unen a tu
             empresa con sus clientes. Implementadas por un equipo con <strong>25 años de trayectoria</strong>.</p>
@@ -254,44 +253,65 @@
             </a>
             <a href="#soluciones" class="btn btn-ghost btn-lg">Ver soluciones →</a>
           </div>
-          <div class="hero-stats">
-            <div class="s"><b><em>+160</em></b><span>clientes activos</span></div>
-            <div class="s"><b>25</b><span>años de trayectoria</span></div>
-            <div class="s"><b>AR·CL</b><span>Argentina, Chile y LATAM</span></div>
-            <div class="s"><b>24/7</b><span>soporte local</span></div>
+          <div class="hero-proof">
+            <div class="proof-logos" aria-hidden="true">
+              <span class="z"><img src="assets/logos/bna-logo.png" alt=""></span>
+              <span><img src="assets/logos/favaloro-logo.png" alt=""></span>
+              <span class="z"><img src="assets/logos/ICBA-logo.png" alt=""></span>
+              <span class="z"><img src="assets/logos/mas_vida_logo.png" alt=""></span>
+            </div>
+            <p><b>+160 clientes</b> en Argentina y LATAM</p>
           </div>
         </div>
 
         <div class="hero-visual">
-          <div class="px-window" aria-hidden="true">
-            <div class="px-bar">
-              <span class="px-dots"><i></i><i></i><i></i></span>
-              <b>Wallboard · Contact Center</b>
-              <span class="px-live">En vivo</span>
+          <div class="omni" role="img" aria-label="Ilustración: WhatsApp, Instagram, Messenger, chat web, email y llamadas llegan a una bandeja unificada, donde responde un asistente con IA y se deriva a un agente">
+            <span class="omni-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8.2 11l7.6-4M8.2 13l7.6 4"/></svg>Omnicanalidad</span>
+
+            <svg class="omni-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <line x1="50" y1="48" x2="10" y2="20" />
+              <line x1="50" y1="48" x2="84" y2="12" />
+              <line x1="50" y1="48" x2="92" y2="52" />
+              <line x1="50" y1="48" x2="78" y2="88" />
+              <line x1="50" y1="48" x2="22" y2="88" />
+              <line x1="50" y1="48" x2="8" y2="56" />
+            </svg>
+
+            <div class="hub">
+              <span class="hi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13l2.6-7.2A1.5 1.5 0 0 1 7 4.8h10a1.5 1.5 0 0 1 1.4 1L21 13"/><path d="M3 13v5a1.5 1.5 0 0 0 1.5 1.5h15A1.5 1.5 0 0 0 21 18v-5h-5l-1 3h-6l-1-3z"/></svg></span>
+              <b>Bandeja unificada</b>
             </div>
-            <div class="px-kpis">
-              <div><b>12</b><span>llamadas en curso</span></div>
-              <div><b>3</b><span>en cola</span></div>
-              <div><b>7</b><span>agentes disponibles</span></div>
-            </div>
-            <ul class="px-rows">
-              <li><span class="px-ext">101</span><span>Recepción</span><em class="st talk">En llamada</em><time>03:12</time></li>
-              <li><span class="px-ext">102</span><span>Soporte</span><em class="st free">Disponible</em><time>&mdash;</time></li>
-              <li><span class="px-ext">103</span><span>Ventas</span><em class="st talk">En llamada</em><time>00:48</time></li>
-              <li><span class="px-ext">104</span><span>Cobranzas</span><em class="st pause">En pausa</em><time>05:20</time></li>
-            </ul>
+
+            <div class="node" style="--x:10%;--y:20%"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 9.5c.3 2.2 2.3 4.2 5 5l1.2-1.4-1.9-1-.8.7a4 4 0 0 1-1.7-1.7l.7-.8-1-1.9z"/></svg></span><small>WhatsApp</small></div>
+            <div class="node" style="--x:84%;--y:12%"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></span><small>Instagram</small></div>
+            <div class="node" style="--x:92%;--y:52%"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 21l1.9-5.4A8.5 8.5 0 1 1 21 11.5z"/><path d="M8 13.5l3-3 2 2 3-3"/></svg></span><small>Messenger</small></div>
+            <div class="node" style="--x:78%;--y:88%"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg></span><small>Email</small></div>
+            <div class="node" style="--x:22%;--y:88%"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><small>Llamadas</small></div>
+            <div class="node" style="--x:8%;--y:56%"><span class="ni"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><small>Chat web</small></div>
+
+            <p class="bub b1"><em>WhatsApp</em>Hola, necesito reprogramar mi turno.</p>
+            <p class="bub b2"><em>Instagram</em>¿En qué estado está mi pedido?</p>
+            <p class="bub b3"><em>Email</em>Quisiera consultar mi factura.</p>
           </div>
-          <div class="px-chat" aria-hidden="true">
-            <div class="px-chat-h">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
-              <b>WhatsApp</b>
-              <em>Asistente con IA</em>
-            </div>
-            <p class="msg in">Hola, necesito reprogramar mi turno del jueves.</p>
-            <p class="msg out">Claro. Tengo lugar el viernes a las 10:30 o el lunes a las 15:00. ¿Cuál te sirve?</p>
-            <p class="msg in">El viernes.</p>
+
+          <div class="omni-flow" aria-hidden="true">
+            <div><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></span><span><b>Cualquier canal</b><small>Un solo lugar</small></span></div>
+            <div><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="8" width="16" height="11" rx="3"/><path d="M12 8V5M9.5 13h.01M14.5 13h.01"/><circle cx="12" cy="4" r="1"/></svg></span><span><b>Asistente IA</b><small>Responde al instante</small></span></div>
+            <div><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg></span><span><b>Agente humano</b><small>Con todo el contexto</small></span></div>
           </div>
           <p class="px-note">Vista ilustrativa de la plataforma</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CIFRAS ============ -->
+    <section class="stats-band" aria-label="GrupoCESA en cifras">
+      <div class="wrap">
+        <div class="stats-grid">
+          <div><b>+160</b><span>clientes activos</span></div>
+          <div><b>25</b><span>años de trayectoria</span></div>
+          <div><b>AR&middot;CL</b><span>Argentina, Chile y LATAM</span></div>
+          <div><b>24/7</b><span>soporte local</span></div>
         </div>
       </div>
     </section>
@@ -318,25 +338,35 @@
             con IA.</p>
         </div>
         <div class="sol-grid">
-          <a href="omnicanalidad.html" class="card reveal" style="display:block; text-decoration:none;">
+          <a href="omnicanalidad.html" class="card reveal">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
                 <circle cx="12" cy="12" r="9" />
                 <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" stroke-linecap="round" />
               </svg></div>
             <h3>Omnicanalidad y Chatbots IA</h3>
             <p>Atendé a tus clientes en WhatsApp, web y más canales con un asistente inteligente.</p>
+            <ul>
+              <li>WhatsApp, web y redes sociales</li>
+              <li>Ruteo inteligente de conversaciones</li>
+              <li>Chatbots con IA</li>
+            </ul>
             <span class="tag">Conversaciones sin fricción →</span>
           </a>
-          <a href="telefonia-ip.html" class="card reveal" style="display:block; text-decoration:none;">
+          <a href="telefonia-ip.html" class="card reveal">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
                 <path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
                   stroke-linecap="round" stroke-linejoin="round" />
               </svg></div>
             <h3>Telefonía IP</h3>
             <p>Infraestructura de voz robusta, escalable y con soporte local. &#9670; Diamond Partner Yeastar.</p>
+            <ul>
+              <li>Troncales SIP y conmutador en la nube</li>
+              <li>Diamond Partner Yeastar</li>
+              <li>Soporte local en Argentina</li>
+            </ul>
             <span class="tag">Infraestructura confiable →</span>
           </a>
-          <a href="contact-center.html" class="card reveal" style="display:block; text-decoration:none;">
+          <a href="contact-center.html" class="card reveal">
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
                 <path d="M16 4h2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"
                   stroke-linecap="round" />
@@ -345,9 +375,14 @@
               </svg></div>
             <h3>Contact Center</h3>
             <p>Gestión centralizada de interacciones para equipos de atención al cliente.</p>
+            <ul>
+              <li>Métricas en tiempo real</li>
+              <li>Grabación y supervisión</li>
+              <li>Gestión centralizada</li>
+            </ul>
             <span class="tag">Operación bajo control →</span>
           </a>
-          <a href="voicebot-aris.html" class="card reveal" style="display:block; text-decoration:none;">
+          <a href="voicebot-aris.html" class="card featured reveal">
             <span class="ai-pill">Destacado</span>
             <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8">
                 <rect x="3" y="5" width="18" height="13" rx="3" />
@@ -355,8 +390,67 @@
               </svg></div>
             <h3>VoiceBot</h3>
             <p>Atención telefónica automática con IA generativa en español rioplatense.</p>
+            <ul>
+              <li>Atención 24/7</li>
+              <li>Voz natural en español rioplatense</li>
+              <li>Integración con tu CRM</li>
+            </ul>
             <span class="tag">Atención inteligente 24/7 →</span>
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PLATAFORMA (vista ilustrativa) ============ -->
+    <section class="sec platform" id="plataforma">
+      <div class="wrap platform-grid">
+        <div class="plat-visual" aria-hidden="true">
+          <div class="plat-chip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg>
+            Soporte local en Argentina
+          </div>
+          <div class="plat-card">
+            <div class="plat-top">
+              <div class="plat-brand">
+                <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+                <span><b>Panel de operación</b><small>Contact Center · tiempo real</small></span>
+              </div>
+              <span class="plat-range">Hoy</span>
+            </div>
+            <div class="plat-kpis">
+              <div><small>Llamadas en curso</small><b>12</b><em>3 en cola</em></div>
+              <div class="hl"><small>Agentes disponibles</small><b>7</b><em>de 10 conectados</em></div>
+            </div>
+            <div class="plat-chart">
+              <div class="plat-chart-h"><b>Actividad de llamadas</b><small>Hoy</small></div>
+              <div class="bars">
+                <i style="--h:34%"></i><i style="--h:48%"></i><i style="--h:40%"></i><i style="--h:62%"></i>
+                <i style="--h:52%"></i><i style="--h:70%"></i><i style="--h:58%"></i><i style="--h:84%"></i>
+                <i style="--h:74%"></i><i style="--h:96%"></i><i style="--h:66%"></i><i style="--h:80%"></i>
+              </div>
+            </div>
+          </div>
+          <p class="px-note">Vista ilustrativa de la plataforma</p>
+        </div>
+        <div class="plat-copy">
+          <span class="eyebrow">Tecnología</span>
+          <h2>Potente por dentro. Simple por fuera.</h2>
+          <p>Una plataforma pensada para que tu equipo opere sin fricción, con integración a tus sistemas y soporte
+            local en cada implementación.</p>
+          <ul class="plat-list">
+            <li>
+              <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 7V3M15 7V3M6 7h12v4a6 6 0 0 1-12 0V7zM12 17v4"/></svg></span>
+              <div><b>Integración con tu operación</b><span>CRM, ERP, agenda y APIs de tu negocio.</span></div>
+            </li>
+            <li>
+              <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 7.5-8 9-4.5-1.5-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+              <div><b>Infraestructura confiable</b><span>Telefonía IP con troncales SIP, respaldada por un Diamond Partner Yeastar.</span></div>
+            </li>
+            <li>
+              <span class="pi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></svg></span>
+              <div><b>Acompañamiento real</b><span>Equipo local en Argentina, sin soporte offshore ni tercerizado.</span></div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -727,6 +821,15 @@
       </div>
     </section>
 
+    <!-- ============ CITA ============ -->
+    <section class="quote-sec" aria-label="Testimonio">
+      <div class="wrap">
+        <span class="eyebrow">Lo que dicen</span>
+        <blockquote>«Los pacientes reciben respuesta al instante, incluso fuera de horario de atención.»</blockquote>
+        <p class="quote-by"><span class="av">IC</span><span><b>ICBA</b><small>Salud · Instituto médico</small></span></p>
+      </div>
+    </section>
+
     <!-- ============ FAQ (AEO / respuestas para IA) ============ -->
     <section class="sec faq" id="faq">
       <div class="wrap">
@@ -765,6 +868,26 @@
                 exacto después del relevamiento inicial.</p>
             </div>
           </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDA CTA ============ -->
+    <section class="cta-band">
+      <div class="wrap">
+        <div class="cta-panel">
+          <span class="eyebrow">Empecemos hoy</span>
+          <h2>Que cada conversación cuente.</h2>
+          <p>Contanos sobre tu operación y diseñamos una solución a tu medida.</p>
+          <div class="cta-actions">
+            <a href="#contacto" class="btn btn-dark btn-lg">Contactar ventas
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="tel:+541168416550" class="btn btn-outline-dark btn-lg">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+              (011) 6841-6550
+            </a>
+          </div>
         </div>
       </div>
     </section>
